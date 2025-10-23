@@ -1,43 +1,129 @@
-# Astro Starter Kit: Minimal
+# UI/UX Designer Portfolio
 
-```sh
-npm create astro@latest -- --template minimal
-```
+A modern, responsive portfolio website built with Astro, TypeScript, and Tailwind CSS. Perfect for showcasing UI/UX design projects with a focus on performance and user experience.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## ✨ Features
 
-## 🚀 Project Structure
+- **Fast & Modern**: Built with Astro for optimal performance
+- **Content Management**: Easy-to-manage projects using Markdown files
+- **Responsive Design**: Looks great on all devices
+- **SEO Optimized**: Built-in SEO features and meta tags
+- **GitHub Pages Ready**: Automated deployment workflow included
+- **Accessible**: WCAG compliant design patterns
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🚀 Quick Start
+
+1. **Clone and install dependencies**
+   ```bash
+   git clone https://github.com/yourusername/tina-portfolio.git
+   cd tina-portfolio
+   npm install
+   ```
+
+2. **Start development server**
+   ```bash
+   npm run dev
+   ```
+   Your site will be available at `http://localhost:4321`
+
+3. **Customize your portfolio**
+   - Update personal information in `src/pages/index.astro`
+   - Add your projects in `src/content/projects/`
+   - Replace placeholder images with your own
+
+## 📁 Project Structure
 
 ```text
 /
 ├── public/
+│   └── images/projects/          # Project images
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── components/               # Reusable components
+│   │   ├── Header.astro
+│   │   └── ProjectCard.astro
+│   ├── content/
+│   │   ├── config.ts            # Content collections config
+│   │   └── projects/            # Project markdown files
+│   ├── layouts/
+│   │   └── Layout.astro         # Base layout
+│   ├── pages/
+│   │   ├── index.astro          # Homepage
+│   │   └── projects/[...slug].astro  # Dynamic project pages
+│   └── styles/
+│       └── global.css           # Global styles
+├── .github/workflows/
+│   └── deploy.yml               # GitHub Pages deployment
+└── astro.config.mjs             # Astro configuration
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🎨 Customization
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### Personal Information
+Update the following files with your information:
+- `src/pages/index.astro` - Name, bio, contact information
+- `src/layouts/Layout.astro` - Site title and meta description
+- `astro.config.mjs` - Site URL and base path
 
-Any static assets, like images, can be placed in the `public/` directory.
+### Adding Projects
+1. Create a new `.md` file in `src/content/projects/`
+2. Use this frontmatter template:
+   ```yaml
+   ---
+   title: "Project Title"
+   description: "Brief project description"
+   image: "https://example.com/image.jpg"
+   tags: ["Tag1", "Tag2", "Tag3"]
+   featured: true
+   projectUrl: "https://example.com"
+   date: 2024-01-01
+   order: 1
+   ---
+   ```
+3. Write your project details in Markdown below the frontmatter
+
+### Styling
+- The project uses Tailwind CSS for styling
+- Customize colors and design in the component files
+- Global styles are in `src/styles/global.css`
+
+## 🚀 Deployment to GitHub Pages
+
+1. **Update configuration**
+   - Change `site` and `base` in `astro.config.mjs` to match your repository
+   - Update repository name if different from 'tina-portfolio'
+
+2. **Enable GitHub Pages**
+   - Go to your repository Settings > Pages
+   - Select "GitHub Actions" as the source
+   - Push your code to the `main` branch
+
+3. **Automatic deployment**
+   - The site will automatically deploy when you push to main
+   - Find your live site at `https://yourusername.github.io/tina-portfolio`
 
 ## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
 | `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run dev`             | Starts local dev server at `localhost:4321`     |
 | `npm run build`           | Build your production site to `./dist/`          |
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 🎯 Tech Stack
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- **Framework**: [Astro](https://astro.build)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com)
+- **Language**: TypeScript
+- **Deployment**: GitHub Pages
+- **Content**: Markdown with frontmatter
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Built with ❤️ using Astro and deployed on GitHub Pages

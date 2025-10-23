@@ -1,0 +1,76 @@
+---
+// Header component with navigation
+---
+
+<header class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md border-b border-gray-200 z-50">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center py-4">
+      <!-- Logo/Name -->
+      <div class="flex items-center gap-2">
+        <img 
+          src={`${import.meta.env.BASE_URL}TY.svg`}
+          alt="Logo" 
+          class="w-8 h-8"
+        />
+        <h1 class="text-xl font-bold text-gray-900">
+          <a href={import.meta.env.BASE_URL} class="hover:text-blue-600 transition-colors">
+            UX Designer
+          </a>
+        </h1>
+      </div>
+      
+      <!-- Navigation -->
+      <nav class="hidden md:flex space-x-8">
+        <a href={`${import.meta.env.BASE_URL}#about`} class="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+          About
+        </a>
+        <a href={`${import.meta.env.BASE_URL}#projects`} class="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+          Projects
+        </a>
+        <a href={`${import.meta.env.BASE_URL}#contact`} class="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+          Contact
+        </a>
+      </nav>
+      
+      <!-- Mobile menu button -->
+      <button class="md:hidden p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors" id="mobile-menu-button">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <!-- Mobile menu -->
+    <div class="md:hidden hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
+        <a href={`${import.meta.env.BASE_URL}#about`} class="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors font-medium">
+          About
+        </a>
+        <a href={`${import.meta.env.BASE_URL}#projects`} class="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors font-medium">
+          Projects
+        </a>
+        <a href={`${import.meta.env.BASE_URL}#contact`} class="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors font-medium">
+          Contact
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  mobileMenuButton?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+  
+  // Close mobile menu when clicking on links
+  const mobileLinks = mobileMenu?.querySelectorAll('a');
+  mobileLinks?.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu?.classList.add('hidden');
+    });
+  });
+</script>
