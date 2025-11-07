@@ -6,7 +6,7 @@ tags: ["Mobile Design", "UI/UX", "App Design", "Event Discovery", "High-Fidelity
 featured: true
 projectUrl: "https://www.figma.com/proto/pGGCzx2U1woHkVyiyw53LA/Event-App-v1.0?node-id=66-206&t=cWrOv0T4437geiKE-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=66%3A206&show-proto-sidebar=1"
 date: 2024-11-02
-order: 1
+order: 3
 ---
 
 
