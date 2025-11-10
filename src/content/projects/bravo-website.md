@@ -38,7 +38,7 @@ Based on my initial assumptions that the main challenge was simply making the we
 
 <br>
 
-<img src="/images/projects/bravo-website/pain_point.png" alt="Pain Points" width="800px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-website/pain_point.png" alt="Pain Points" width="800px" style="display: block; margin: 0 auto;">
 
 <br>
 <br>
@@ -48,7 +48,7 @@ Based on my initial assumptions that the main challenge was simply making the we
 
 <br>
 
-![Design Principles](/images/projects/bravo-website/principles.png)
+![Design Principles](/portfolio/images/projects/bravo-website/principles.png)
 
 <br>
 <br>
@@ -59,7 +59,7 @@ I used the insights from the mobile app research to create a consistent user per
 
 <br>
 
-![Sarah Mitchell Persona](/images/projects/bravo-website/persona.png)
+![Sarah Mitchell Persona](/portfolio/images/projects/bravo-website/persona.png)
 
 <br>
 <br>
@@ -84,7 +84,7 @@ I created a cross-device user journey map of Sarah's experience to identify pote
 
 **Goal**: Use the website across different devices to research, compare, and book qualified tutors for my children
 
-![User Journey Map](/images/projects/bravo-website/journey_map.png)
+![User Journey Map](/portfolio/images/projects/bravo-website/journey_map.png)
 
 
 <br>
@@ -99,23 +99,23 @@ I began by sketching responsive wireframes for key pages, keeping the user's nee
 
 <br>
 
-<img src="/images/projects/bravo-website/paper_wf1.JPG" alt="Website Paper Wireframes" width="400px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-website/paper_wf1.JPG" alt="Website Paper Wireframes" width="400px" style="display: block; margin: 0 auto;">
 
 <br>
 
-<img src="/images/projects/bravo-website/paper_wf2.JPG" alt="Website Paper Wireframes" width="400px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-website/paper_wf2.JPG" alt="Website Paper Wireframes" width="400px" style="display: block; margin: 0 auto;">
 
 <br>
 
-<img src="/images/projects/bravo-website/paper_wf3.JPG" alt="Website Paper Responsive Wireframes" width="400px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-website/paper_wf3.JPG" alt="Website Paper Responsive Wireframes" width="400px" style="display: block; margin: 0 auto;">
 
 <br>
 
-<img src="/images/projects/bravo-website/paper_wf4.JPG" alt="Website Paper Wireframes" width="400px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-website/paper_wf4.JPG" alt="Website Paper Wireframes" width="400px" style="display: block; margin: 0 auto;">
 
 <br>
 
-<img src="/images/projects/bravo-website/paper_wf5.JPG" alt="Website Paper Wireframes" width="400px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-website/paper_wf5.JPG" alt="Website Paper Wireframes" width="400px" style="display: block; margin: 0 auto;">
 
 <br>
 
@@ -125,7 +125,7 @@ Based on users access the website across different devices to complete their tut
 
 <br>
 
-<img src="/images/projects/bravo-website/paper_wf6.png" alt="Tablet and Mobile Paper Wireframes" width="500px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-website/paper_wf6.png" alt="Tablet and Mobile Paper Wireframes" width="500px" style="display: block; margin: 0 auto;">
 
 
 <br>
@@ -146,7 +146,7 @@ Moving to digital wireframes helped me visualize how the responsive design would
 
 <br>
 
-<img src="/images/projects/bravo-website/Desktop1.png" alt="Homepage Digital Wireframes" width="500px" style="display: block; margin: 0 auto; border: 2px solid #d1d5db; border-radius: 4px;">
+<img src="/portfolio/images/projects/bravo-website/Desktop1.png" alt="Homepage Digital Wireframes" width="500px" style="display: block; margin: 0 auto; border: 2px solid #d1d5db; border-radius: 4px;">
 
 <br>
 <br>
@@ -159,7 +159,7 @@ Moving to digital wireframes helped me visualize how the responsive design would
 
 <br>
 
-<img src="/images/projects/bravo-website/Desktop2.png" alt="Profile Page Digital Wireframes" width="500px" style="display: block; margin: 0 auto;border: 2px solid #d1d5db; border-radius: 4px;">
+<img src="/portfolio/images/projects/bravo-website/Desktop2.png" alt="Profile Page Digital Wireframes" width="500px" style="display: block; margin: 0 auto;border: 2px solid #d1d5db; border-radius: 4px;">
 
 <br>
 <br>
@@ -173,17 +173,17 @@ Moving to digital wireframes helped me visualize how the responsive design would
 
 <br>
 
-<img src="/images/projects/bravo-website/Desktop3.png" alt="Booking Flow Digital Wireframes" width="500px" style="display: block; margin: 0 auto;border: 2px solid #d1d5db; border-radius: 4px;">
+<img src="/portfolio/images/projects/bravo-website/Desktop3.png" alt="Booking Flow Digital Wireframes" width="500px" style="display: block; margin: 0 auto;border: 2px solid #d1d5db; border-radius: 4px;">
 
 <br>
 <br>
 
-<img src="/images/projects/bravo-website/Desktop4.png" alt="Booking Flow Digital Wireframes" width="500px" style="display: block; margin: 0 auto;border: 2px solid #d1d5db; border-radius: 4px;">
+<img src="/portfolio/images/projects/bravo-website/Desktop4.png" alt="Booking Flow Digital Wireframes" width="500px" style="display: block; margin: 0 auto;border: 2px solid #d1d5db; border-radius: 4px;">
 
 <br>
 <br>
 
-<img src="/images/projects/bravo-website/Desktop5.png" alt="Booking Flow Digital Wireframes" width="500px" style="display: block; margin: 0 auto;border: 2px solid #d1d5db; border-radius: 4px;">
+<img src="/portfolio/images/projects/bravo-website/Desktop5.png" alt="Booking Flow Digital Wireframes" width="500px" style="display: block; margin: 0 auto;border: 2px solid #d1d5db; border-radius: 4px;">
 
 <br>
 <br>
@@ -198,7 +198,7 @@ Moving to digital wireframes helped me visualize how the responsive design would
 
 <br>
 
-<img src="/images/projects/bravo-website/tablet_mobileWF.png" alt="Tablet and Mobile Digital Wireframes" width="700px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-website/tablet_mobileWF.png" alt="Tablet and Mobile Digital Wireframes" width="700px" style="display: block; margin: 0 auto;">
 
 <br>
 <br>
@@ -210,7 +210,7 @@ I connected all of the screens involved in the primary user flow of finding a tu
 
 <br>
 
-![Low-Fidelity Prototype](/images/projects/bravo-website/website_lowfi_prototype.png)
+![Low-Fidelity Prototype](/portfolio/images/projects/bravo-website/website_lowfi_prototype.png)
 
 <br>
 
@@ -232,7 +232,7 @@ I conducted unmoderated usability testing with 5 participants across different d
 
 <br>
 
-<img src="/images/projects/bravo-website/key_findings.png" alt="Usability Testing Results" width="600px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-website/key_findings.png" alt="Usability Testing Results" width="600px" style="display: block; margin: 0 auto;">
 
 <br>
 <br>
@@ -249,7 +249,7 @@ Based on the insights from usability testing, I made several strategic changes t
 
 <br>
 
-<img src="/images/projects/bravo-website/schedule_improvement.png" alt="Tutor Scheduling Design Improvements" width="1000px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-website/schedule_improvement.png" alt="Tutor Scheduling Design Improvements" width="1000px" style="display: block; margin: 0 auto;">
 
 <br>
 <br>
@@ -260,7 +260,7 @@ Based on the insights from usability testing, I made several strategic changes t
 
 <br>
 
-<img src="/images/projects/bravo-website/payment_improvement.png" alt="Booking Process Improvements" width="1000px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-website/payment_improvement.png" alt="Booking Process Improvements" width="1000px" style="display: block; margin: 0 auto;">
 
 <br>
 <br>
@@ -272,9 +272,9 @@ Based on the insights from usability testing, I made several strategic changes t
 
 ##### Original Desktop Size
 
-<img src="/images/projects/bravo-website/mockup_1.png" alt="Mockups for Original Desktop Size" width="900px" style="display: block; margin: 0 auto">
+<img src="/portfolio/images/projects/bravo-website/mockup_1.png" alt="Mockups for Original Desktop Size" width="900px" style="display: block; margin: 0 auto">
 
-<img src="/images/projects/bravo-website/mockup_2.png" alt="Mockups for Original Desktop Size" width="1000px" style="display: block; margin: 0 auto">
+<img src="/portfolio/images/projects/bravo-website/mockup_2.png" alt="Mockups for Original Desktop Size" width="1000px" style="display: block; margin: 0 auto">
 
 <br>
 <br>
@@ -285,7 +285,7 @@ I included additional screen sizes in my mockups based on my earlier wireframes.
 
 <br>
 
-<img src="/images/projects/bravo-website/mockup_3.png" alt="Mockups for Tablet and Mobile Sizes" width="500px" style="display: block; margin: 0 auto">
+<img src="/portfolio/images/projects/bravo-website/mockup_3.png" alt="Mockups for Tablet and Mobile Sizes" width="500px" style="display: block; margin: 0 auto">
 
 <br>
 <br>
@@ -297,7 +297,7 @@ The final high-fidelity prototype incorporated all user feedback and responsive 
 
 <br>
 
-![High-Fidelity Prototype](/images/projects/bravo-website/hi-fi_prototype.png)
+![High-Fidelity Prototype](/portfolio/images/projects/bravo-website/hi-fi_prototype.png)
 
 <br>
 
@@ -314,7 +314,7 @@ To ensure the website works for all users across all devices, I incorporated com
 <br>
 <br>
 
-<img src="/images/projects/bravo-website/inclusive.png" alt="Accessibility and Inclusive Design" width="1500px" style="display: block; margin: 0 auto">
+<img src="/portfolio/images/projects/bravo-website/inclusive.png" alt="Accessibility and Inclusive Design" width="1500px" style="display: block; margin: 0 auto">
 
 <br>
 <br>

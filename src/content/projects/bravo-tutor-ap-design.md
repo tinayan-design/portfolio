@@ -33,7 +33,7 @@ Upon choosing this prompt, I have deconstructed the prompt into research questio
 
 <br>
 
-![Research Questions](/images/projects/bravo-tutor/goals.png)
+![Research Questions](/portfolio/images/projects/bravo-tutor/goals.png)
 
 <br>
 <br>
@@ -50,7 +50,7 @@ Based on my initial assumptions that parents' primary challenge was simply findi
 
 <br>
 
-![Pain Points](/images/projects/bravo-tutor/pain_points.png)
+![Pain Points](/portfolio/images/projects/bravo-tutor/pain_points.png)
 
 <br>
 <br>
@@ -60,7 +60,7 @@ Based on my initial assumptions that parents' primary challenge was simply findi
 
 <br>
 
-![Design Principles](/images/projects/bravo-tutor/principles.png)
+![Design Principles](/portfolio/images/projects/bravo-tutor/principles.png)
 
 <br>
 <br>
@@ -71,7 +71,7 @@ I used these insights to create user persona, which informed the design of a str
 
 <br>
 
-![Emily Rose Harrington Persona](/images/projects/bravo-tutor/persona.png)
+![Emily Rose Harrington Persona](/portfolio/images/projects/bravo-tutor/persona.png)
 
 <br>
 <br>
@@ -89,7 +89,7 @@ I created a user storyboard based on my user persona: Emily who are going to use
 
 <br>
 
-![User Storyboard](/images/projects/bravo-tutor/storyboard.JPG)
+![User Storyboard](/portfolio/images/projects/bravo-tutor/storyboard.JPG)
 
 <br>
 <br>
@@ -107,7 +107,7 @@ I created a user journey map of Emily's experience to identify potential pain po
 
 <br>
 
-![User Journey Map](/images/projects/bravo-tutor/journeymap.png)
+![User Journey Map](/portfolio/images/projects/bravo-tutor/journeymap.png)
 
 *User journey map showing Emily's experience from discovering the need for a tutor through completing her first booking.*
 
@@ -120,7 +120,7 @@ I created a user journey map of Emily's experience to identify potential pain po
 
 **User Task**: Use the tutor service app to schedule a private tutor quickly and easily.
 
-![User Flow](/images/projects/bravo-tutor/user_flow.png)
+![User Flow](/portfolio/images/projects/bravo-tutor/user_flow.png)
 
 <br>
 <br>
@@ -134,7 +134,7 @@ I began by sketching paper wireframes for each screen in my app, keeping the use
 
 <br>
 
-<img src="/images/projects/bravo-tutor/paper_wireframes.png" alt="Paper Wireframes" width="900px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-tutor/paper_wireframes.png" alt="Paper Wireframes" width="900px" style="display: block; margin: 0 auto;">
 <br>
 <br>
 
@@ -152,7 +152,7 @@ Moving to digital wireframes helped me visualize how the app would address user 
 
 <br>
 
-<img src="/images/projects/bravo-tutor/digital_WF1.png" alt="Digital Wireframes" width="450px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-tutor/digital_WF1.png" alt="Digital Wireframes" width="450px" style="display: block; margin: 0 auto;">
 <br>
 <br>
 
@@ -164,7 +164,7 @@ Moving to digital wireframes helped me visualize how the app would address user 
 
 <br>
 
-<img src="/images/projects/bravo-tutor/digital_WF2.png" alt="Digital Wireframes" width="450px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-tutor/digital_WF2.png" alt="Digital Wireframes" width="450px" style="display: block; margin: 0 auto;">
 
 <br>
 <br>
@@ -176,7 +176,7 @@ Moving to digital wireframes helped me visualize how the app would address user 
 
 <br>
 
-<img src="/images/projects/bravo-tutor/digital_WF3.png" alt="Digital Wireframes" width="450px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-tutor/digital_WF3.png" alt="Digital Wireframes" width="450px" style="display: block; margin: 0 auto;">
 
 <br>
 <br>
@@ -188,8 +188,8 @@ Moving to digital wireframes helped me visualize how the app would address user 
 
 <br>
 
-<img src="/images/projects/bravo-tutor/digital_WF4.png" alt="Digital Wireframes" width="450px" style="display: block; margin: 0 auto;">
-<img src="/images/projects/bravo-tutor/digital_WF5.png" alt="Digital Wireframes" width="450px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-tutor/digital_WF4.png" alt="Digital Wireframes" width="450px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-tutor/digital_WF5.png" alt="Digital Wireframes" width="450px" style="display: block; margin: 0 auto;">
 
 <br>
 <br>
@@ -201,7 +201,7 @@ Moving to digital wireframes helped me visualize how the app would address user 
 
 <br>
 
-<img src="/images/projects/bravo-tutor/digital_WF6.png" alt="Digital Wireframes" width="450px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-tutor/digital_WF6.png" alt="Digital Wireframes" width="450px" style="display: block; margin: 0 auto;">
 
 <br>
 <br>
@@ -212,7 +212,7 @@ I connected all the digital wireframes to create a low-fidelity prototype, focus
 
 <br>
 
-![Low-Fidelity Prototype](/images/projects/bravo-tutor/lo-fi_prototype.png)
+![Low-Fidelity Prototype](/portfolio/images/projects/bravo-tutor/lo-fi_prototype.png)
 
 <br>
 
@@ -234,7 +234,7 @@ I conducted an unmoderated usability study with 5 participants in Toronto to val
 
 <br>
 
-![Usability Findings](/images/projects/bravo-tutor/usability_findings.png)
+![Usability Findings](/portfolio/images/projects/bravo-tutor/usability_findings.png)
 
 <br>
 <br>
@@ -252,7 +252,7 @@ Based on the insights from usability study, I made several strategic changes bas
 
 <br>
 
-<img src="/images/projects/bravo-tutor/before&after1.png" alt="Before and After Design Improvements" width="600px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-tutor/before&after1.png" alt="Before and After Design Improvements" width="600px" style="display: block; margin: 0 auto;">
 
 <br>
 <br>
@@ -264,7 +264,7 @@ Based on the insights from usability study, I made several strategic changes bas
 
 <br>
 
-<img src="/images/projects/bravo-tutor/before&after2.png" alt="Before and After Design Improvements" width="700px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-tutor/before&after2.png" alt="Before and After Design Improvements" width="700px" style="display: block; margin: 0 auto;">
 
 <br>
 <br>
@@ -276,14 +276,14 @@ Based on the insights from usability study, I made several strategic changes bas
 
 <br>
 
-<img src="/images/projects/bravo-tutor/before&after3.png" alt="Before and After Design Improvements" width="500px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-tutor/before&after3.png" alt="Before and After Design Improvements" width="500px" style="display: block; margin: 0 auto;">
 
 <br>
 <br>
 <br>
 
 ### Mockups
-![Mockups](/images/projects/bravo-tutor/mockups.png)
+![Mockups](/portfolio/images/projects/bravo-tutor/mockups.png)
 
 <br>
 <br>
@@ -294,7 +294,7 @@ The final high-fidelity prototype incorporated all user feedback and design impr
 
 <br>
 
-![High-Fidelity Prototype](/images/projects/bravo-tutor/hi-fi_prototype.png)
+![High-Fidelity Prototype](/portfolio/images/projects/bravo-tutor/hi-fi_prototype.png)
 
 <br>
 
@@ -310,7 +310,7 @@ To ensure the app works for all users, I incorporated several accessibility feat
 
 <br>
 
-![Accessibility](/images/projects/bravo-tutor/accessibility.png)
+![Accessibility](/portfolio/images/projects/bravo-tutor/accessibility.png)
 
 <br>
 <br>
