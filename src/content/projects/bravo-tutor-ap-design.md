@@ -14,18 +14,15 @@ order: 1
 **Bravo Tutors** is a tutoring service app designed to help busy parents quickly find and book qualified private tutors. The app's main goal is to allow users to schedule private tutors quickly and easily.
 
 <br>
-
-**Problem**:  Existing mobile apps for finding tutors have complicated designs, are inefficient for browsing and have confusing checkout processes. 
-
-<br>
-
-**Solution**:  Design a user-friendly Bravo Tutors app with clear navigation and a reliable booking experience that allows users to find and book a tutor efficiently.
-
-<br>
 <br>
 
 ## Research
-Upon choosing this prompt, I have deconstructed the prompt into research questions, which tackled by establishing research goals.
+
+**Prompt**: Design an app that enable parents to search for and book time with tutors.
+
+<br>
+
+During my Google UX Design Course, this is one of my chosen design projects. Upon choosing this prompt,  I have deconstructed the prompt into research questions, which tackled by establishing research goals.
 
 <br>
 
@@ -36,9 +33,49 @@ Upon choosing this prompt, I have deconstructed the prompt into research questio
 ![Research Questions](/portfolio/images/projects/bravo-tutor/goals.png)
 
 <br>
+
+### Research Method
+
+To gain deep understanding of users' needs and frustrations, I conducted **one-on-one interviews** with **5 participants**—all parents who had previously searched for or hired private tutors for their children.
+
 <br>
 
-**Research Summary**
+**Participant Insights**
+
+<br>
+
+**P1** — Working mother, 2 kids  
+*"I spend more time comparing tutors than actually booking one. The information is scattered everywhere."*
+
+<br>
+
+**P2** — Single father, 1 kid  
+*"I never know if the tutor is actually qualified. Reviews feel unreliable on most platforms."*
+
+<br>
+
+**P3** — Dual-income parents, 3 kids  
+*"Scheduling is a nightmare. I need to see real-time availability, not back-and-forth messaging."*
+
+<br>
+
+**P4** — Part-time working mom, 2 kids  
+*"Payment is always awkward. I wish there was a simple, secure way to handle it in-app."*
+
+<br>
+
+**P5** — Full-time professional, 1 kid  
+*"I want to save tutors I like and easily rebook them without starting from scratch."*
+
+<br>
+<br>
+
+**These interviews revealed that parents' frustrations extended far beyond just "finding a tutor"—they struggled with the entire end-to-end experience, from verifying qualifications to managing schedules and payments.**
+
+<br>
+<br>
+
+#### Research Summary ####
 
 Based on my initial assumptions that parents' primary challenge was simply finding a tutor, I conducted user interviews to gather insights. The research revealed deeper frustrations with the entire process, including unreliable scheduling and cumbersome payment methods.
 
@@ -76,9 +113,21 @@ I used these insights to create user persona, which informed the design of a str
 <br>
 <br>
 
-**Problem Statement**
+#### Problem Statement ####
 
 Emily Rose Harrington is a working mother of two who needs to find and book time with a suitable private tutor for her children because she doesn't have time to teach her children's homework herself.
+
+<br>
+
+**The Value of the Product**
+
+This platform removes the stress and uncertainty from the tutor selection process, helping parents confidently support their children's education without sacrificing family time or routine flexibility.
+
+<br>
+
+**Connecting to Emily's Needs**
+
+Emily wants a simple and reliable way to book a tutor who fits her family’s schedule and educational needs. This product caters to her by offering an intuitive and trustworthy experience—from discovery to confirmation—while saving her time and giving her peace of mind that her children are in good hands.
 
 <br>
 <br>
@@ -230,6 +279,18 @@ I conducted an unmoderated usability study with 5 participants in Toronto to val
 
 <br>
 
+**Research Questions**
+
+Q1: How long does it take a user to find and book a private tutor in the app?
+
+Q2: How does the user feel about navigating through the app?
+
+Q3: What frustrated users most about booking a private tutor through the app?
+
+Q4: What can we learn from the steps that users take, to book a private tutor?
+
+<br>
+
 ### Key Findings
 
 <br>
@@ -245,38 +306,55 @@ Based on the insights from usability study, I made several strategic changes bas
 
 <br>
 
-##### Improved Call-to-Action
+#### Improved Call-to-Action
 - **Before:** Generic "Reserve" button that confused users
 - **After:** Clear "Check availability" button that set proper expectations
 - **Addition:** Added a heart-shaped "favorite" button for saving preferred tutors
 
 <br>
 
-<img src="/portfolio/images/projects/bravo-tutor/before&after1.png" alt="Before and After Design Improvements" width="600px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-tutor/before&after1.png" alt="Before and After Design Improvements" width="700px" style="display: block; margin: 0 auto;">
+
+<br>
+
+**Why this change?**  
+During usability testing, 4 out of 5 participants hesitated when they saw the "Reserve" button—they weren't sure if clicking it would immediately commit them to a booking or if they could still browse availability first. This confusion caused users to abandon the flow or click back multiple times. By changing the label to "Check availability," I set clearer expectations and reduced user anxiety. Additionally, participants expressed a desire to compare multiple tutors before booking, so I added a "favorite" button to let users save and revisit tutors without losing their progress.
 
 <br>
 <br>
+<br>
 
-##### Enhanced Scheduling Interface
+#### Enhanced Scheduling Interface
 - **Before:** Simple list of available times that was hard to parse
 - **After:** Intuitive in-app calendar view with dropdown menus for hour selection
 - **Result:** Much clearer visual representation of availability
 
 <br>
 
-<img src="/portfolio/images/projects/bravo-tutor/before&after2.png" alt="Before and After Design Improvements" width="700px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-tutor/before&after2.png" alt="Before and After Design Improvements" width="800px" style="display: block; margin: 0 auto;">
+
+<br>
+
+**Why this change?**  
+Usability testing revealed that the original list-based scheduling interface was a major friction point. Participants struggled to quickly identify available slots—they had to scroll through a long list and mentally map times to their own calendars. Several users mentioned they would prefer a visual calendar format similar to what they use in their daily lives. The redesigned calendar view with dropdown menus allows users to immediately see availability at a glance, select dates intuitively, and choose specific time slots without cognitive overload. This change reduced the average time to complete scheduling by making the process feel familiar and effortless.
 
 <br>
 <br>
+<br>
 
-##### Complete Checkout Experience
+#### Complete Checkout Experience
 - **Before:** Missing billing address fields
 - **After:** Comprehensive payment form with all required information
 - **Addition:** Added security indicators
 
 <br>
 
-<img src="/portfolio/images/projects/bravo-tutor/before&after3.png" alt="Before and After Design Improvements" width="500px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-tutor/before&after3.png" alt="Before and After Design Improvements" width="600px" style="display: block; margin: 0 auto;">
+
+<br>
+
+**Why this change?**  
+During testing, participants expressed confusion and hesitation at the checkout stage. The original design was missing essential billing address fields, which made users question whether the payment would actually go through correctly. More importantly, 3 out of 5 participants mentioned they felt uneasy entering payment information without seeing any security indicators—they weren't sure if their financial data was protected. To address these trust issues, I added a complete billing address form and incorporated visible security indicators. These additions reassured users that their information was safe, reducing checkout abandonment and increasing confidence in completing the booking.
 
 <br>
 <br>

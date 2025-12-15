@@ -1,6 +1,6 @@
 ---
-title: "Bravo Tutors Responsive Website Design"
-description: "A comprehensive responsive website design case study for Bravo Tutors, focused on improving user experience and conversion optimization across all devices."
+title: "Bravo Tutors Responsive Web Redesign"
+description: "A comprehensive responsive website redesign case study for Bravo Tutors, focused on improving user experience and conversion optimization across all devices."
 image: "images/projects/bravo-website/Bravo_website_cover.png"
 tags: ["Web Design", "Responsive Design", "UI/UX", "Case Study", "Conversion Optimization"]
 featured: true
@@ -10,7 +10,7 @@ order: 2
 ---
 
 
-## Bravo Tutors Responsive Website Design
+## Bravo Tutors Responsive Website Redesign
 **Bravo Tutors** responsive website is designed to provide a seamless tutoring service experience across all devices. The website's main goal is to help parents easily find and book qualified tutors while ensuring optimal user experience on desktop, tablet, and mobile devices.
 
 <br>
@@ -64,7 +64,7 @@ I used the insights from the mobile app research to create a consistent user per
 <br>
 <br>
 
-**Problem Statement**
+#### Problem Statement
 
 Sarah Mitchell is a busy working mother who needs to quickly find and book qualified tutors for her children using her various devices throughout the day, because she requires flexibility to manage tutoring arrangements from anywhere, whether at work on desktop or on-the-go with her mobile phone.
 
@@ -74,7 +74,7 @@ Sarah Mitchell is a busy working mother who needs to quickly find and book quali
 
 ### Early Concepts
 
-##### User Journey Mapping
+#### User Journey Map
 I created a cross-device user journey map of Sarah's experience to identify potential pain points and opportunities for improvement. This helped outline the steps from initial website visit to tutor booking completion, revealing key moments where responsive design could optimize the experience.
 
 <br>
@@ -86,6 +86,26 @@ I created a cross-device user journey map of Sarah's experience to identify pote
 
 ![User Journey Map](/portfolio/images/projects/bravo-website/journey_map.png)
 
+<br>
+<br>
+<br>
+
+#### Information Architecture (IA)
+
+To establish a clear and intuitive structure for the Bravo Tutors website, I created a sitemap that organizes content based on user needs and common navigation patterns. This IA ensures users can quickly find tutors, access information, and complete bookings with minimal friction.
+
+<br>
+
+#### Sitemap
+![Site Map](/portfolio/images/projects/bravo-website/sitemap.png)
+
+<br>
+<br>
+
+
+**Key IA Decision**
+
+The site uses a flat hierarchy where most pages are accessible within 2-3 clicks from the homepage. A clear booking flow provides linear progression from tutor discovery to payment confirmation. Account integration enables saved tutors and booking history for returning users, while persistent navigation keeps key sections accessible from any page across all devices.
 
 <br>
 <br>
@@ -210,7 +230,7 @@ I connected all of the screens involved in the primary user flow of finding a tu
 
 <br>
 
-![Low-Fidelity Prototype](/portfolio/images/projects/bravo-website/website_lowfi_prototype.png)
+![Low-Fidelity Prototype](/portfolio/images/projects/bravo-website/website_lofi_prototype.png)
 
 <br>
 
@@ -229,8 +249,6 @@ I conducted unmoderated usability testing with 5 participants across different d
 <br>
 
 ### Key Findings
-
-<br>
 
 <img src="/portfolio/images/projects/bravo-website/key_findings.png" alt="Usability Testing Results" width="600px" style="display: block; margin: 0 auto;">
 
@@ -253,6 +271,7 @@ Based on the insights from usability testing, I made several strategic changes t
 
 <br>
 <br>
+<br>
 
 ##### Clear Booking Summary Showcase
 - **Before:** Unclear about booking details that caused confusion
@@ -260,7 +279,7 @@ Based on the insights from usability testing, I made several strategic changes t
 
 <br>
 
-<img src="/portfolio/images/projects/bravo-website/payment_improvement.png" alt="Booking Process Improvements" width="1000px" style="display: block; margin: 0 auto;">
+<img src="/portfolio/images/projects/bravo-website/payment_improve.png" alt="Booking Process Improvements" width="1000px" style="display: block; margin: 0 auto;">
 
 <br>
 <br>
@@ -297,7 +316,7 @@ The final high-fidelity prototype incorporated all user feedback and responsive 
 
 <br>
 
-![High-Fidelity Prototype](/portfolio/images/projects/bravo-website/hi-fi_prototype.png)
+![High-Fidelity Prototype](/portfolio/images/projects/bravo-website/hifi_prototype.png)
 
 <br>
 
