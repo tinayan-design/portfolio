@@ -11,18 +11,24 @@ order: 1
 
 
 ## Bravo Tutors App Design
+**The Problem**: Parents spent an average of 45 minutes trying to find a qualified tutor on existing platforms.
+
+<br>
+
 **Bravo Tutors** is a tutoring service app designed to help busy parents quickly find and book qualified private tutors. The app's main goal is to allow users to schedule private tutors quickly and easily.
 
 <br>
-<br>
 
-## Research
-
-**Prompt**: Design an app that enable parents to search for and book time with tutors.
+**My Role**: UX Designer leading the Bravo Tutors Mobile App design.
 
 <br>
+<br>
 
-During my Google UX Design Course, this is one of my chosen design projects. Upon choosing this prompt,  I have deconstructed the prompt into research questions, which tackled by establishing research goals.
+## Discover
+
+### Research
+
+I have deconstructed the problem into research questions, which tackled by establishing research goals.
 
 <br>
 
@@ -34,7 +40,7 @@ During my Google UX Design Course, this is one of my chosen design projects. Upo
 
 <br>
 
-### Research Method
+#### Research Method
 
 To gain deep understanding of users' needs and frustrations, I conducted **one-on-one interviews** with **5 participants**—all parents who had previously searched for or hired private tutors for their children.
 
@@ -70,20 +76,17 @@ To gain deep understanding of users' needs and frustrations, I conducted **one-o
 <br>
 <br>
 
-**These interviews revealed that parents' frustrations extended far beyond just "finding a tutor"—they struggled with the entire end-to-end experience, from verifying qualifications to managing schedules and payments.**
+#### Research Summary
 
-<br>
-<br>
-
-#### Research Summary ####
-
-Based on my initial assumptions that parents' primary challenge was simply finding a tutor, I conducted user interviews to gather insights. The research revealed deeper frustrations with the entire process, including unreliable scheduling and cumbersome payment methods.
+Based on my initial assumptions that parents' primary challenge was simply finding a tutor, I conducted user interviews to gather insights. **These interviews revealed that parents' frustrations extended far beyond just "finding a tutor"—they struggled with the entire end-to-end experience, from verifying qualifications to managing schedules and payments.** The research revealed deeper frustrations with the entire process, including unreliable scheduling and cumbersome payment methods.
 
 <br>
 <br>
 <br>
 
-### Key Pain Points
+## Define
+
+#### Key Pain Points
 
 <br>
 
@@ -91,9 +94,8 @@ Based on my initial assumptions that parents' primary challenge was simply findi
 
 <br>
 <br>
-<br>
 
-### Design Principles
+#### Design Principles
 
 <br>
 
@@ -103,7 +105,7 @@ Based on my initial assumptions that parents' primary challenge was simply findi
 <br>
 <br>
 
-### Persona
+#### Persona
 I used these insights to create user persona, which informed the design of a streamlined, all-in-one platform to address these core user needs.
 
 <br>
@@ -113,13 +115,14 @@ I used these insights to create user persona, which informed the design of a str
 <br>
 <br>
 
-#### Problem Statement ####
+**Problem Statement**
 
 Emily Rose Harrington is a working mother of two who needs to find and book time with a suitable private tutor for her children because she doesn't have time to teach her children's homework herself.
 
 <br>
+<br>
 
-**The Value of the Product**
+#### The Value of Bravo Tutors App
 
 This platform removes the stress and uncertainty from the tutor selection process, helping parents confidently support their children's education without sacrificing family time or routine flexibility.
 
@@ -127,13 +130,13 @@ This platform removes the stress and uncertainty from the tutor selection proces
 
 **Connecting to Emily's Needs**
 
-Emily wants a simple and reliable way to book a tutor who fits her family’s schedule and educational needs. This product caters to her by offering an intuitive and trustworthy experience—from discovery to confirmation—while saving her time and giving her peace of mind that her children are in good hands.
+Emily wants a simple and reliable way to book a tutor who fits her family’s schedule and educational needs. Bravo Tutors App caters to her by offering an intuitive and trustworthy experience—from discovery to confirmation—while saving her time and giving her peace of mind that her children are in good hands.
 
 <br>
 <br>
 <br>
 
-### Early Concepts
+#### Early Concepts
 I created a user storyboard based on my user persona: Emily who are going to use the tutor service app to schedule a private tutor quickly and easily.
 
 <br>
@@ -144,7 +147,7 @@ I created a user storyboard based on my user persona: Emily who are going to use
 <br>
 <br>
 
-### User Journey Mapping
+#### User Journey Map
 I created a user journey map of Emily's experience to identify potential pain points and opportunities for improvement. This helped outline the steps from looking for a tutor to confirming a session and paying for it, revealing key moments where the experience could be optimized.
 
 <br>
@@ -164,7 +167,7 @@ I created a user journey map of Emily's experience to identify potential pain po
 <br>
 <br>
 
-### User Flow
+#### User Flow
 <br>
 
 **User Task**: Use the tutor service app to schedule a private tutor quickly and easily.
@@ -175,9 +178,9 @@ I created a user journey map of Emily's experience to identify potential pain po
 <br>
 <br>
 
-## Design, Test, Iterate
+## Develop
 
-### Initial Wireframing
+#### Initial Sketching
 
 I began by sketching paper wireframes for each screen in my app, keeping the user's needs for a fast booking process and easy navigation in mind. My goal was to create a seamless user flow for a simple and easy booking experience.
 
@@ -187,7 +190,7 @@ I began by sketching paper wireframes for each screen in my app, keeping the use
 <br>
 <br>
 
-### Digital Wireframes
+#### Digital Wireframing
 
 Moving to digital wireframes helped me visualize how the app would address user pain points and identify ways for improvements. Key screens included:
 <br>
@@ -255,7 +258,7 @@ Moving to digital wireframes helped me visualize how the app would address user 
 <br>
 <br>
 
-### Low-Fidelity Prototype
+#### Low-Fidelity Prototype
 
 I connected all the digital wireframes to create a low-fidelity prototype, focusing on the primary user flow: finding a tutor, checking availability, scheduling, and completing payment. This step ensured the booking experience was smooth and easy to navigate.
 
@@ -271,7 +274,9 @@ I connected all the digital wireframes to create a low-fidelity prototype, focus
 <br>
 <br>
 
-## Usability Testing
+## Deliver
+
+#### Usability Testing
 
 **Methodology**
 
@@ -291,7 +296,7 @@ Q4: What can we learn from the steps that users take, to book a private tutor?
 
 <br>
 
-### Key Findings
+**Key Findings**
 
 <br>
 
@@ -299,9 +304,8 @@ Q4: What can we learn from the steps that users take, to book a private tutor?
 
 <br>
 <br>
-<br>
 
-## Refining the Design
+### Refine and Iterate
 Based on the insights from usability study, I made several strategic changes based on users feedback to improve the user experience:
 
 <br>
@@ -360,13 +364,13 @@ During testing, participants expressed confusion and hesitation at the checkout 
 <br>
 <br>
 
-### Mockups
+#### Final Mockups
 ![Mockups](/portfolio/images/projects/bravo-tutor/mockups.png)
 
 <br>
 <br>
 
-### High-Fidelity Prototype
+#### High-Fidelity Prototype
 
 The final high-fidelity prototype incorporated all user feedback and design improvements while maintaining the same core user flow. The result was a polished, intuitive experience that successfully addressed all identified pain points.
 

@@ -11,20 +11,41 @@ order: 2
 
 
 ## Bravo Tutors Responsive Website Redesign
-**Bravo Tutors** responsive website is designed to provide a seamless tutoring service experience across all devices. The website's main goal is to help parents easily find and book qualified tutors while ensuring optimal user experience on desktop, tablet, and mobile devices.
-
-<br>
-
-**Problem**: The existing Bravo Tutors website lacked responsive design, had poor conversion rates, and provided inconsistent user experience across different devices.
-
-<br>
-
-**Solution**: Design a fully responsive, modern website with optimized user flows, clear call-to-actions, and device-specific optimizations that enhance the booking experience and increase conversion rates across all platforms.
+Bravo Tutors Responsive Website is designed to provide a seamless tutoring service experience across all devices.
 
 <br>
 <br>
 
-## Research
+#### Project Background
+
+Although this is the same design prompt as my earlier Bravo Tutors mobile app project, I deliberately chose to approach this responsive website with an entirely different design direction:
+
+<br>
+
+- **Intentional Differentiation** — I purposefully chose a distinct design direction to challenge myself and avoid simply replicating my previous work.
+
+- **Design Philosophy** — Effective UX design is not about copying existing solutions, but exploring diverse approaches to address user needs.
+
+- **Creative Versatility** — I aimed to demonstrate my ability to generate fresh concepts while staying true to the brand's core values.
+
+<br>
+<br>
+
+#### Project Goal
+
+Design a fully responsive, modern website with optimized user flows, clear call-to-actions, and device-specific optimizations that enhance the booking experience and increase conversion rates across all platforms.
+
+<br>
+
+**My Role:** UX Designer leading the Bravo Tutors Website design.
+
+<br>
+<br>
+<br>
+
+## Discover
+
+### Research
 
 **Research Summary**
 
@@ -32,29 +53,32 @@ Based on my initial assumptions that the main challenge was simply making the we
 
 <br>
 <br>
-<br>
 
-### Key Pain Points
-
-<br>
-
-<img src="/portfolio/images/projects/bravo-website/pain_point.png" alt="Pain Points" width="800px" style="display: block; margin: 0 auto;">
-
-<br>
-<br>
-<br>
-
-### Design Principles
+**Key Pain Points**
 
 <br>
 
-![Design Principles](/portfolio/images/projects/bravo-website/principles.png)
+<img src="/portfolio/images/projects/bravo-website/pain_point.png" alt="Pain Points" width="700px" style="display: block; margin: 0 auto;">
 
 <br>
 <br>
 <br>
 
-### Persona
+With these pain points as my foundation, I established the following design principles to guide the responsive website redesign:
+
+<br>
+
+**Design Principles**
+
+<img src="/portfolio/images/projects/bravo-website/principles.png" alt="Design Principles" width="700px" style="display: block;">
+
+<br>
+<br>
+<br>
+
+## Define
+
+#### Persona
 I used the insights from the mobile app research to create a consistent user persona for the website, ensuring a cohesive experience across all Bravo Tutors touchpoints.
 
 <br>
@@ -111,9 +135,9 @@ The site uses a flat hierarchy where most pages are accessible within 2-3 clicks
 <br>
 <br>
 
-## Design, Test, Iterate
+## Develop
 
-### Paper Wireframes
+#### Initial Sketching
 
 I began by sketching responsive wireframes for key pages, keeping the user's needs for cross-device consistency and efficient booking process in mind. My goal was to create a seamless experience that worked equally well on desktop, tablet, and mobile.
 
@@ -152,7 +176,7 @@ Based on users access the website across different devices to complete their tut
 <br>
 <br>
 
-### Digital Wireframes
+#### Digital Wireframes
 
 Moving to digital wireframes helped me visualize how the responsive design would address user pain points across different screen sizes. Key pages included:
 <br>
@@ -224,7 +248,7 @@ Moving to digital wireframes helped me visualize how the responsive design would
 <br>
 <br>
 
-### Low-Fidelity Prototype
+#### Low-Fidelity Prototype
 
 I connected all of the screens involved in the primary user flow of finding a tutor and make an appointment. In order to create a comprehensive low-fidelity prototype, I had received feedback on my designs from my co-workers about spacing, placement of buttons and input fields. I implemented several suggestions in places that addressed user pain points.
 
@@ -240,7 +264,9 @@ I connected all of the screens involved in the primary user flow of finding a tu
 <br>
 <br>
 
-## Usability Testing
+## Deliver
+
+#### Usability Testing
 
 **Methodology**
 
@@ -248,7 +274,7 @@ I conducted unmoderated usability testing with 5 participants across different d
 
 <br>
 
-### Key Findings
+**Key Findings**
 
 <img src="/portfolio/images/projects/bravo-website/key_findings.png" alt="Usability Testing Results" width="600px" style="display: block; margin: 0 auto;">
 
@@ -256,7 +282,7 @@ I conducted unmoderated usability testing with 5 participants across different d
 <br>
 <br>
 
-## Refining the Design
+### Refine and Iterate
 Based on the insights from usability testing, I made several strategic changes to improve the cross-device user experience:
 
 <br>
@@ -270,6 +296,13 @@ Based on the insights from usability testing, I made several strategic changes t
 <img src="/portfolio/images/projects/bravo-website/schedule_improvement.png" alt="Tutor Scheduling Design Improvements" width="1000px" style="display: block; margin: 0 auto;">
 
 <br>
+
+**Why this change?**
+
+During usability testing, participants struggled to identify available time slots and often felt uncertain about whether their selection was confirmed. The redesigned drop-down menu provides immediate visual feedback, clearly distinguishes available from unavailable slots, and reduces cognitive load by presenting options in a scannable format. This improvement directly addresses the user's need for a quick, confidence-inspiring booking experience.
+
+<br>
+<br>
 <br>
 <br>
 
@@ -282,10 +315,17 @@ Based on the insights from usability testing, I made several strategic changes t
 <img src="/portfolio/images/projects/bravo-website/payment_improve.png" alt="Booking Process Improvements" width="1000px" style="display: block; margin: 0 auto;">
 
 <br>
+
+**Why this change?**
+
+Users expressed anxiety about proceeding to payment without a clear overview of their booking details. The persistent summary card on the right side serves as a constant reference point, allowing users to verify their selections (tutor, date, time, and fee) at any stage of the checkout process. This transparency builds trust, reduces abandonment rates, and follows established e-commerce best practices for conversion optimization.
+
+<br>
+<br>
 <br>
 <br>
 
-## Mockups
+### Final Mockups
 
 <br>
 
@@ -310,7 +350,7 @@ I included additional screen sizes in my mockups based on my earlier wireframes.
 <br>
 <br>
 
-### High-Fidelity Prototype
+#### High-Fidelity Prototype
 
 The final high-fidelity prototype incorporated all user feedback and responsive design improvements while maintaining consistent branding across all devices. The result was a polished, cross-device experience that successfully addressed all identified usability issues.
 
