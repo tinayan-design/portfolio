@@ -23,6 +23,43 @@ order: 1
 
 <br>
 <br>
+<br>
+
+### AI-assisted UX Workflow
+
+To improve efficiency throughout the design process, I used AI tools as a support system while maintaining human-centered judgment.
+
+<br>
+ 
+• Synthesized user interview notes and survey responses using AI to identify recurring pain points and behavioral patterns.
+
+<br>
+
+• Drafted initial personas and refined them based on UX principles and project goals.
+
+<br>
+
+• Explored multiple solution directions during ideation to avoid design fixation.
+
+<br>
+
+• Assisted UX writing for microcopy, error states, and onboarding content.
+
+<br>
+
+AI was used to accelerate analysis and exploration, while all design decisions were validated and finalized through UX reasoning.
+
+<br>
+<br>
+<br>
+
+### Design Process Overview
+
+![Process Overview](/portfolio/images/projects/bravo-tutor/ai_process.png)
+
+<br>
+<br>
+<br>
 
 ## Discover
 
@@ -78,7 +115,7 @@ To gain deep understanding of users' needs and frustrations, I conducted **one-o
 
 #### Research Summary
 
-Based on my initial assumptions that parents' primary challenge was simply finding a tutor, I conducted user interviews to gather insights. **These interviews revealed that parents' frustrations extended far beyond just "finding a tutor"—they struggled with the entire end-to-end experience, from verifying qualifications to managing schedules and payments.** The research revealed deeper frustrations with the entire process, including unreliable scheduling and cumbersome payment methods.
+Based on my initial assumptions that parents' primary challenge was simply finding a tutor, I conducted user interviews to gather insights. **These interviews revealed that parents' frustrations extended far beyond just "finding a tutor"—they struggled with the entire end-to-end experience, from verifying qualifications to managing schedules and payments.** The research revealed deeper frustrations with the entire process, including unreliable scheduling and cumbersome payment methods. Insight synthesis was accelerated using AI support for summarising patterns, ensuring coverage of multiple perspectives efficiently while retaining human validation.
 
 <br>
 <br>
