@@ -113,9 +113,17 @@ To gain deep understanding of users' needs and frustrations, I conducted **one-o
 <br>
 <br>
 
+![Affinity Diagram](/portfolio/images/projects/bravo-tutor/affinity.png)
+
+<br>
+
 #### Research Summary
 
-Based on my initial assumptions that parents' primary challenge was simply finding a tutor, I conducted user interviews to gather insights. **These interviews revealed that parents' frustrations extended far beyond just "finding a tutor"—they struggled with the entire end-to-end experience, from verifying qualifications to managing schedules and payments.** The research revealed deeper frustrations with the entire process, including unreliable scheduling and cumbersome payment methods. Insight synthesis was accelerated using AI support for summarising patterns, ensuring coverage of multiple perspectives efficiently while retaining human validation.
+Based on my initial assumptions that parents' primary challenge was simply finding a tutor, I conducted user interviews to gather insights. **These interviews revealed that parents' frustrations extended far beyond just "finding a tutor"—they struggled with the entire end-to-end experience, from verifying qualifications to managing schedules and payments.** 
+
+<br>
+
+From interviews, parents cared about schedule clarity, tutor trust and payment ease ― this guided redesign of the scheduling screen and the addition of trust signals. Insight synthesis was accelerated using AI support for summarising patterns, ensuring coverage of multiple perspectives efficiently while retaining human validation.
 
 <br>
 <br>
