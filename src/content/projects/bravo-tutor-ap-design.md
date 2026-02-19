@@ -243,62 +243,86 @@ Moving to digital wireframes helped me visualize how the app would address user 
 
 ##### Homepage Design
 
-- **Navigation:** Clean hamburger menu for easy access to all sections
-- **Discovery:** Swiping carousel featuring tutor introduction videos
-- **Browsing:** Organized list of tutor profiles with key information visible
-
-<br>
-
-<img src="/portfolio/images/projects/bravo-tutor/digital_WF1.png" alt="Digital Wireframes" width="450px" style="display: block; margin: 0 auto;">
-<br>
-<br>
+<table style="width: 100%; border-collapse: collapse; margin: 2rem 0;">
+<tr>
+<td style="width: 50%; vertical-align: top; padding-right: 2rem;">
+<ul style="margin: 0; padding-left: 20px;">
+<li><strong>Navigation:</strong> Clean hamburger menu for easy access to all sections</li>
+<li><strong>Discovery:</strong> Swiping carousel featuring tutor introduction videos</li>
+<li><strong>Browsing:</strong> Organized list of tutor profiles with key information visible</li>
+</ul>
+</td>
+<td style="width: 50%; vertical-align: top;">
+<img src="/portfolio/images/projects/bravo-tutor/digital_WF1.png" alt="Digital Wireframes" width="100%" style="display: block;">
+</td>
+</tr>
+</table>
 
 ##### Tutor Profile Page
 
-- **Information Display:** Majority of space dedicated to tutor details, qualifications, and reviews
-- **Action Button:** Prominent "Reserve" button for quick booking initiation
-- **Trust Building:** Reviews, ratings, and verification badges prominently displayed
-
-<br>
-
-<img src="/portfolio/images/projects/bravo-tutor/digital_WF2.png" alt="Digital Wireframes" width="450px" style="display: block; margin: 0 auto;">
-
-<br>
-<br>
+<table style="width: 100%; border-collapse: collapse; margin: 2rem 0;">
+<tr>
+<td style="width: 50%; vertical-align: top; padding-right: 2rem;">
+<ul style="margin: 0; padding-left: 20px;">
+<li><strong>Information Display:</strong> Majority of space dedicated to tutor details, qualifications, and reviews</li>
+<li><strong>Action Button:</strong> Prominent "Reserve" button for quick booking initiation</li>
+<li><strong>Trust Building:</strong> Reviews, ratings, and verification badges prominently displayed</li>
+</ul>
+</td>
+<td style="width: 50%; vertical-align: top;">
+<img src="/portfolio/images/projects/bravo-tutor/digital_WF2.png" alt="Digital Wireframes" width="100%" style="display: block;">
+</td>
+</tr>
+</table>
 
 ##### Scheduling Interface
 
-- **Availability:** Clear view of tutor's available dates and times
-- **Selection:** Intuitive date and time picker interface
-
-<br>
-
-<img src="/portfolio/images/projects/bravo-tutor/digital_WF3.png" alt="Digital Wireframes" width="450px" style="display: block; margin: 0 auto;">
-
-<br>
-<br>
+<table style="width: 100%; border-collapse: collapse; margin: 2rem 0;">
+<tr>
+<td style="width: 50%; vertical-align: top; padding-right: 2rem;">
+<ul style="margin: 0; padding-left: 20px;">
+<li><strong>Availability:</strong> Clear view of tutor's available dates and times</li>
+<li><strong>Selection:</strong> Intuitive date and time picker interface</li>
+</ul>
+</td>
+<td style="width: 50%; vertical-align: top;">
+<img src="/portfolio/images/projects/bravo-tutor/digital_WF3.png" alt="Digital Wireframes" width="100%" style="display: block;">
+</td>
+</tr>
+</table>
 
 ##### Confirm Booking and Payment Flow
 
-- **Booking Summary:** Clear confirmation page showing all booking details
-- **Payment Form:** Dedicated page for personal and payment information
-
-<br>
-
-<img src="/portfolio/images/projects/bravo-tutor/digital_WF4.png" alt="Digital Wireframes" width="450px" style="display: block; margin: 0 auto;">
-<img src="/portfolio/images/projects/bravo-tutor/digital_WF5.png" alt="Digital Wireframes" width="450px" style="display: block; margin: 0 auto;">
-
-<br>
-<br>
+<table style="width: 100%; border-collapse: collapse; margin: 2rem 0;">
+<tr>
+<td style="width: 50%; vertical-align: top; padding-right: 2rem;">
+<ul style="margin: 0; padding-left: 20px;">
+<li><strong>Booking Summary:</strong> Clear confirmation page showing all booking details</li>
+<li><strong>Payment Form:</strong> Dedicated page for personal and payment information</li>
+</ul>
+</td>
+<td style="width: 50%; vertical-align: top;">
+<img src="/portfolio/images/projects/bravo-tutor/digital_WF4.png" alt="Digital Wireframes" width="100%" style="display: block; margin-bottom: 1rem;">
+<img src="/portfolio/images/projects/bravo-tutor/digital_WF5.png" alt="Digital Wireframes" width="100%" style="display: block;">
+</td>
+</tr>
+</table>
 
 ##### Confirmation
 
-- **Success State:** Clear confirmation that booking is complete
-- **Next Actions:** Options to return home or book additional sessions
-
-<br>
-
-<img src="/portfolio/images/projects/bravo-tutor/digital_WF6.png" alt="Digital Wireframes" width="450px" style="display: block; margin: 0 auto;">
+<table style="width: 100%; border-collapse: collapse; margin: 2rem 0;">
+<tr>
+<td style="width: 50%; vertical-align: top; padding-right: 2rem;">
+<ul style="margin: 0; padding-left: 20px;">
+<li><strong>Success State:</strong> Clear confirmation that booking is complete</li>
+<li><strong>Next Actions:</strong> Options to return home or book additional sessions</li>
+</ul>
+</td>
+<td style="width: 50%; vertical-align: top;">
+<img src="/portfolio/images/projects/bravo-tutor/digital_WF6.png" alt="Digital Wireframes" width="100%" style="display: block;">
+</td>
+</tr>
+</table>
 
 <br>
 <br>
@@ -349,6 +373,7 @@ Q4: What can we learn from the steps that users take, to book a private tutor?
 
 <br>
 <br>
+<br>
 
 ### Refine and Iterate
 Based on the insights from usability study, I made several strategic changes based on users feedback to improve the user experience:
@@ -365,9 +390,13 @@ Based on the insights from usability study, I made several strategic changes bas
 <img src="/portfolio/images/projects/bravo-tutor/before&after1.png" alt="Before and After Design Improvements" width="700px" style="display: block; margin: 0 auto;">
 
 <br>
+<br>
 
-**Why this change?**  
-During usability testing, 4 out of 5 participants hesitated when they saw the "Reserve" button—they weren't sure if clicking it would immediately commit them to a booking or if they could still browse availability first. This confusion caused users to abandon the flow or click back multiple times. By changing the label to "Check availability," I set clearer expectations and reduced user anxiety. Additionally, participants expressed a desire to compare multiple tutors before booking, so I added a "favorite" button to let users save and revisit tutors without losing their progress.
+**Why this change?** 
+
+<br>
+
+During usability testing, 4 out of 5 participants hesitated when they saw the "Reserve" button—they weren't sure if clicking it would immediately commit them to a booking. This confusion caused users to abandon the flow or click back multiple times. By changing the label to "Check availability," I set clearer expectations and reduced user anxiety, while adding a "favorite" button allowed users to save and compare tutors before booking.
 
 <br>
 <br>
@@ -385,7 +414,10 @@ During usability testing, 4 out of 5 participants hesitated when they saw the "R
 <br>
 
 **Why this change?**  
-Usability testing revealed that the original list-based scheduling interface was a major friction point. Participants struggled to quickly identify available slots—they had to scroll through a long list and mentally map times to their own calendars. Several users mentioned they would prefer a visual calendar format similar to what they use in their daily lives. The redesigned calendar view with dropdown menus allows users to immediately see availability at a glance, select dates intuitively, and choose specific time slots without cognitive overload. This change reduced the average time to complete scheduling by making the process feel familiar and effortless.
+
+<br>
+
+Usability testing revealed that the list-based scheduling interface was a major friction point—participants struggled to identify available slots and preferred a visual calendar format. The redesigned calendar view with dropdown menus allows users to see availability at a glance and select dates intuitively, reducing scheduling time significantly.
 
 <br>
 <br>
@@ -403,15 +435,54 @@ Usability testing revealed that the original list-based scheduling interface was
 <br>
 
 **Why this change?**  
-During testing, participants expressed confusion and hesitation at the checkout stage. The original design was missing essential billing address fields, which made users question whether the payment would actually go through correctly. More importantly, 3 out of 5 participants mentioned they felt uneasy entering payment information without seeing any security indicators—they weren't sure if their financial data was protected. To address these trust issues, I added a complete billing address form and incorporated visible security indicators. These additions reassured users that their information was safe, reducing checkout abandonment and increasing confidence in completing the booking.
 
+<br>
+
+During testing, 3 out of 5 participants felt uneasy at checkout—the design was missing billing address fields and security indicators. I added a complete billing form and visible security indicators, which reassured users and reduced checkout abandonment.
+
+<br>
+<br>
+<br>
+
+#### Impact
+
+**User Satisfaction & Task Time**
+
+The redesign significantly improved both task completion time and user satisfaction. Here's a comparison of metrics from usability testing before and after implementing the design improvements:
+
+<br>
+
+**Task Time Comparison**
+
+![Task Time](/portfolio/images/projects/bravo-tutor/task_time.png)
+
+<br>
+<br>
+
+**User Satisfaction Comparison**
+
+![User Satisfaction](/portfolio/images/projects/bravo-tutor/satisfaction.png)
+
+<br>
+
+These improvements demonstrate that the design changes—particularly the clearer call-to-action, enhanced scheduling interface, and complete checkout experience—successfully addressed user pain points and created a more efficient, satisfying booking experience.
+
+<br>
 <br>
 <br>
 <br>
 
 #### Final Mockups
-![Mockups](/portfolio/images/projects/bravo-tutor/mockups.png)
+<br>
+<br>
 
+![Mockups](/portfolio/images/projects/bravo-tutor/mock1.png)
+
+<br>
+
+![Mockups](/portfolio/images/projects/bravo-tutor/mock2.png)
+
+<br>
 <br>
 <br>
 
