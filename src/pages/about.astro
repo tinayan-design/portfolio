@@ -6,11 +6,12 @@ import Header from '../components/Header.astro';
 <Layout title="About - Tina Yan" description="About Tina Yan, UI/UX Designer. User research, UI design, and prototyping for user-centered digital experiences.">
   <Header currentPage="about" />
 
+  <main id="main-content">
   <!-- About: two-column layout - text left, hero image right (aligned with homepage hero) -->
   <section class="min-h-[90vh] flex items-center bg-[#f5f5f5] px-4 sm:px-6 lg:px-8 pt-24 pb-16">
     <div class="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12 md:gap-16 items-center">
       <div>
-        <p class="text-sm font-semibold uppercase tracking-widest text-primary mb-4">About</p>
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-text mb-4">About</p>
         <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">
           About me
         </h1>
@@ -28,6 +29,7 @@ import Header from '../components/Header.astro';
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center justify-center px-6 py-3 bg-primary hover:bg-primary/90 text-white font-medium rounded-lg transition-colors"
+          aria-label="Download Resume (opens in new window)"
         >
           Resume
         </a>
@@ -44,12 +46,39 @@ import Header from '../components/Header.astro';
     </div>
   </section>
 
-  <!-- Story timeline -->
-  <section class="py-20 md:py-28 bg-[#fafafa] px-4 sm:px-6 lg:px-8" id="story">
+  <!-- Tabs: My Story / My Craft -->
+  <section class="pt-20 md:pt-28 pb-32 md:pb-44 lg:pb-52 bg-[#fafafa] px-4 sm:px-6 lg:px-8" id="story">
     <div class="max-w-3xl mx-auto">
-      <p class="text-sm font-semibold uppercase tracking-widest text-primary text-center mb-2">About</p>
-      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-16 text-center">My story</h2>
+      <p class="text-sm font-semibold uppercase tracking-widest text-primary-text text-center mb-2">About</p>
 
+      <!-- Tab bar -->
+      <div class="flex justify-center gap-2 mb-14" role="tablist" aria-label="About sections">
+        <button
+          type="button"
+          role="tab"
+          aria-selected="true"
+          aria-controls="panel-story"
+          id="tab-story"
+          data-tab-button="story"
+          class="about-tab px-6 py-3 rounded-lg font-semibold text-gray-900 bg-white border-2 border-primary shadow-sm hover:text-gray-900 hover:border-gray-300 transition-colors"
+        >
+          My Story
+        </button>
+        <button
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-craft"
+          id="tab-craft"
+          data-tab-button="craft"
+          class="about-tab px-6 py-3 rounded-lg font-semibold text-gray-600 border-2 border-transparent hover:text-gray-900 hover:border-gray-300 transition-colors"
+        >
+          My Craft
+        </button>
+      </div>
+
+      <!-- Panel: My Story -->
+      <div id="panel-story" role="tabpanel" aria-labelledby="tab-story" data-tab-panel="story" class="about-panel">
       <div class="relative">
         <div class="absolute left-5 md:left-1/2 top-0 bottom-0 w-px border-l-2 border-dashed border-primary/30 -translate-x-1/2 md:translate-x-0 md:ml-[-1px]" aria-hidden="true"></div>
 
@@ -74,8 +103,8 @@ import Header from '../components/Header.astro';
               <span class="text-base">🌱</span>
             </div>
             <div class="rounded-2xl p-6 md:p-7 bg-white border-2 border-primary/20 flex-1 transition-transform transition-shadow duration-300 ease-out hover:scale-[1.02] hover:shadow-xl">
-              <h3 class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">The pivot</h3>
-              <p class="text-gray-700 leading-relaxed">As a <strong>Product Designer</strong> and career switcher, I am driven by a philosophy of <strong>"Simple is Best"</strong> — the art of stripping away complexity to reveal intuitive, inclusive, and visually compelling experiences. After several years in the corporate world, most recently as a <strong>Workplace Ambassador at TD</strong>, I decided to follow my passion for creative problem-solving and pivot into the world of UX Design.</p>
+              <h3 class="text-primary-text font-semibold text-sm uppercase tracking-wider mb-3">The pivot</h3>
+              <p class="text-gray-700 leading-relaxed">As a <strong>UI/UX Designer</strong> and career switcher, I am driven by a philosophy of <strong>"Simple is Best"</strong> — the art of stripping away complexity to reveal intuitive, inclusive, and visually compelling experiences. After several years in the corporate world, most recently as a <strong>Workplace Ambassador at TD</strong>, I decided to follow my passion for creative problem-solving and pivot into the world of UX Design.</p>
             </div>
           </div>
         </div>
@@ -88,7 +117,7 @@ import Header from '../components/Header.astro';
               <span class="text-base">📖</span>
             </div>
             <div class="rounded-2xl p-6 md:p-7 bg-white border-2 border-primary/20 flex-1 transition-transform transition-shadow duration-300 ease-out hover:scale-[1.02] hover:shadow-xl">
-              <h3 class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">The journey</h3>
+              <h3 class="text-primary-text font-semibold text-sm uppercase tracking-wider mb-3">The journey</h3>
               <p class="text-gray-700 leading-relaxed mb-4">My journey began with the <strong>Google UX Design Professional Certificate</strong>, a rigorous program that allowed me to formalize my design thinking. However, my "design eye" was truly sharpened during my time in corporate environments.</p>
               <p class="text-gray-700 leading-relaxed">I spent years managing high-stakes stakeholder needs and navigating complex enterprise workflows. This experience taught me a vital lesson that I carry into every Figma file: <strong>design isn't just about how it looks; it's about how it works for the human on the other side of the screen.</strong></p>
             </div>
@@ -103,12 +132,12 @@ import Header from '../components/Header.astro';
               <span class="text-base">💡</span>
             </div>
             <div class="rounded-2xl p-6 md:p-7 bg-white border-2 border-primary/20 flex-1 transition-transform transition-shadow duration-300 ease-out hover:scale-[1.02] hover:shadow-xl">
-              <h3 class="text-primary font-semibold text-sm uppercase tracking-wider mb-4">What I bring to the table</h3>
+              <h3 class="text-primary-text font-semibold text-sm uppercase tracking-wider mb-4">What I bring to the table</h3>
               <ul class="space-y-4 text-gray-700 leading-relaxed">
-                <li class="flex gap-3"><span class="text-primary mt-0.5 font-medium">•</span><span><strong>A Human-Centered Approach:</strong> I bridge the gap between business objectives and user empathy.</span></li>
-                <li class="flex gap-3"><span class="text-primary mt-0.5 font-medium">•</span><span><strong>Visual Clarity:</strong> I specialize in creating clean, modern interfaces that prioritize usability without sacrificing aesthetics.</span></li>
-                <li class="flex gap-3"><span class="text-primary mt-0.5 font-medium">•</span><span><strong>Enterprise Literacy:</strong> My background at a major financial institution means I am comfortable with complexity, scale, and cross-functional collaboration.</span></li>
-                <li class="flex gap-3"><span class="text-primary mt-0.5 font-medium">•</span><span><strong>A Growth Mindset:</strong> I am a lifelong learner who embraces the challenge of a new path with curiosity and resilience.</span></li>
+                <li class="flex gap-3"><span class="text-primary-text mt-0.5 font-medium">•</span><span><strong>A Human-Centered Approach:</strong> I bridge the gap between business objectives and user empathy.</span></li>
+                <li class="flex gap-3"><span class="text-primary-text mt-0.5 font-medium">•</span><span><strong>Visual Clarity:</strong> I specialize in creating clean, modern interfaces that prioritize usability without sacrificing aesthetics.</span></li>
+                <li class="flex gap-3"><span class="text-primary-text mt-0.5 font-medium">•</span><span><strong>Enterprise Literacy:</strong> My background at a major financial institution means I am comfortable with complexity, scale, and cross-functional collaboration.</span></li>
+                <li class="flex gap-3"><span class="text-primary-text mt-0.5 font-medium">•</span><span><strong>A Growth Mindset:</strong> I am a lifelong learner who embraces the challenge of a new path with curiosity and resilience.</span></li>
               </ul>
             </div>
           </div>
@@ -122,7 +151,7 @@ import Header from '../components/Header.astro';
               <span class="text-base">🚀</span>
             </div>
             <div class="rounded-2xl p-6 md:p-7 bg-white border-2 border-primary/20 flex-1 transition-transform transition-shadow duration-300 ease-out hover:scale-[1.02] hover:shadow-xl">
-              <h3 class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">What's next</h3>
+              <h3 class="text-primary-text font-semibold text-sm uppercase tracking-wider mb-3">What's next</h3>
               <p class="text-gray-700 leading-relaxed">I am currently seeking a <strong>Junior UX Designer</strong> role where I can contribute to meaningful digital solutions and continue to grow alongside a forward-thinking team.</p>
             </div>
           </div>
@@ -136,7 +165,7 @@ import Header from '../components/Header.astro';
               <span class="text-base">🛠️</span>
             </div>
             <div class="rounded-2xl p-6 md:p-7 bg-white border-2 border-primary/20 flex-1 transition-transform transition-shadow duration-300 ease-out hover:scale-[1.02] hover:shadow-xl">
-              <h3 class="text-primary font-semibold text-sm uppercase tracking-wider mb-4">Key skills</h3>
+              <h3 class="text-primary-text font-semibold text-sm uppercase tracking-wider mb-4">Key skills</h3>
               <p class="text-gray-700 text-sm leading-relaxed mb-4">UX/UI Design, Wireframing, Prototyping, User Research, Figma, Design Systems, and Accessibility (WCAG).</p>
               <div class="flex flex-wrap gap-2">
                 <span class="px-3 py-1.5 rounded-full border-2 border-primary/30 bg-white text-gray-700 text-sm font-medium">UX/UI Design</span>
@@ -159,26 +188,219 @@ import Header from '../components/Header.astro';
               <span class="text-base">🌟</span>
             </div>
             <div class="rounded-2xl p-6 md:p-7 bg-white border-2 border-primary/20 flex-1 transition-transform transition-shadow duration-300 ease-out hover:scale-[1.02] hover:shadow-xl">
-              <h3 class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Ready for the next chapter</h3>
+              <h3 class="text-primary-text font-semibold text-sm uppercase tracking-wider mb-3">Ready for the next chapter</h3>
               <p class="text-gray-700 leading-relaxed">I'm ready to enter the UX design field and open for <strong>full-time working opportunities</strong>. Let's create something meaningful together.</p>
             </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- Panel: My Craft -->
+      <div id="panel-craft" role="tabpanel" aria-labelledby="tab-craft" data-tab-panel="craft" class="about-panel hidden" aria-hidden="true">
+        <div class="max-w-2xl mx-auto text-center pt-24 md:pt-32 mb-[9.5rem] md:mb-[11.5rem] space-y-6 md:space-y-8">
+          <p class="text-gray-800 text-xl md:text-2xl font-semibold leading-relaxed italic mb-8 md:mb-10">
+            Beyond pixels and prototypes, my design philosophy is rooted in the tactile world.
+          </p>
+          <p class="text-gray-700 text-base md:text-lg font-normal leading-loose">
+            These creative studies explore the core principles—balance, color theory, and visual rhythm. It's where my passion for art meets the precision of user-centered design.
+          </p>
+        </div>
+        <div class="space-y-24 md:space-y-32 lg:space-y-40">
+          <!-- Artwork 1: Ceramic coasters -->
+          <div>
+            <img
+              src={`${import.meta.env.BASE_URL}images/craft/coasters.jpg`}
+              alt="Hand-painted ceramic coasters: landscapes, florals, and abstracts"
+              width="4032"
+              height="3024"
+              class="max-w-full h-auto block"
+              loading="lazy"
+            />
+            <p class="mt-6 text-gray-700 leading-relaxed max-w-2xl mx-auto text-center md:text-left">
+              A study in composition and texture beyond the screen. These hand-painted ceramic coasters explore color theory and tactile elements through varied themes like landscapes, florals, and abstracts.
+            </p>
+          </div>
+          <!-- Artwork 2: Diptych -->
+          <div>
+            <img
+              src={`${import.meta.env.BASE_URL}images/craft/diptych.png`}
+              alt="Diptych: circular form split across two canvases with gold metallic accents and blue gradients"
+              width="4032"
+              height="3024"
+              class="max-w-full h-auto block"
+              loading="lazy"
+            />
+            <p class="mt-6 text-gray-700 leading-relaxed max-w-2xl mx-auto text-center md:text-left">
+              <em class="text-sm block">Painted from inspiration by another artist; source/author unknown.</em>
+              <span class="block mt-3">A diptych exploring visual balance through high contrast and color gradients. By splitting a singular circular form across two canvases, I experiment with how focal points and metallic accents can unite disparate elements to create a cohesive, harmonious whole.</span>
+            </p>
+          </div>
+          <!-- Artwork 3: Stylized forest -->
+          <div>
+            <img
+              src={`${import.meta.env.BASE_URL}images/craft/forest.png`}
+              alt="Stylized forest painting with metallic accents and cool blue palette, exploring depth and linear perspective"
+              width="4032"
+              height="3024"
+              class="max-w-full h-auto block"
+              loading="lazy"
+            />
+            <p class="mt-6 text-gray-700 leading-relaxed max-w-2xl mx-auto text-center md:text-left">
+              An exploration of depth and linear perspective through a stylized forest. By using varying scales and a central focal point, I created a sense of immersion. The metallic accents against the cool blue palette highlight my focus on creating visual interest through contrast.
+            </p>
+          </div>
+          <!-- Artwork 4: Color blocking & plant -->
+          <div>
+            <img
+              src={`${import.meta.env.BASE_URL}images/craft/color-block-plant.png`}
+              alt="Bold color blocking with minimalist plant illustration in yellow, teal, orange-red and black"
+              width="4032"
+              height="3024"
+              class="max-w-full h-auto block"
+              loading="lazy"
+            />
+            <p class="mt-6 text-gray-700 leading-relaxed max-w-2xl mx-auto text-center md:text-left">
+              <em class="text-sm block">Painted from inspiration by another artist; source/author unknown.</em>
+              <span class="block mt-3">Bold color blocking meets minimalist illustration. This canvas highlights my focus on composition and spatial relationships, using a vibrant palette to create harmony between disparate shapes—a core principle I bring to every digital interface I design.</span>
+            </p>
+          </div>
+          <!-- Artwork 5: Photo frame -->
+          <div>
+            <img
+              src={`${import.meta.env.BASE_URL}images/craft/photo-frame.png`}
+              alt="Hand-painted photo frame with whimsical sky and daisy motif across outer and inner layers"
+              width="4032"
+              height="3024"
+              class="max-w-full h-auto block"
+              loading="lazy"
+            />
+            <p class="mt-6 text-gray-700 leading-relaxed max-w-2xl mx-auto text-center md:text-left">
+              Exploring continuity by extending a whimsical sky and daisy motif across the layers of a photo frame. This piece demonstrates my eye for thematic consistency and my passion for transforming functional objects into engaging, delightful visual experiences that tell a story.
+            </p>
+          </div>
+
+          <!-- Section: Studies & Interpretations -->
+          <h3 class="text-xl font-bold text-gray-900 mt-16 mb-8 pt-8 border-t border-gray-200">Studies & Interpretations</h3>
+          <!-- Studies & Interpretations 1: Starry Night tribute -->
+          <div>
+            <img
+              src={`${import.meta.env.BASE_URL}images/craft/starry-night.png`}
+              alt="Tribute to Van Gogh's The Starry Night with swirling sky and expressive brushwork"
+              width="4032"
+              height="3024"
+              class="max-w-full h-auto block"
+              loading="lazy"
+            />
+            <p class="mt-6 text-gray-700 leading-relaxed max-w-2xl mx-auto text-center md:text-left">
+              A tribute to Van Gogh's The Starry Night, exploring movement and rhythm through expressive brushwork. This piece demonstrates my eye for visual energy and flow, highlighting how swirling forms and high-contrast accents can guide a viewer's attention across a composition.
+            </p>
+          </div>
+          <!-- Studies & Interpretations 2: Monet-inspired water lilies -->
+          <div>
+            <img
+              src={`${import.meta.env.BASE_URL}images/craft/water-lilies.png`}
+              alt="Monet-inspired impressionist study of water lilies, willow branches, and serene light"
+              width="4032"
+              height="3024"
+              class="max-w-full h-auto block"
+              loading="lazy"
+            />
+            <p class="mt-6 text-gray-700 leading-relaxed max-w-2xl mx-auto text-center md:text-left">
+              An impressionist study of tranquility and light. Inspired by Monet, this painting explores organic forms and a serene palette, showcasing my eye for atmospheric harmony and my dedication to learning from classical masters to inform my modern design work.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <script>
+    // @ts-nocheck - inline script; DOM types in browser
+    const tabButtons = document.querySelectorAll('[data-tab-button]');
+    const tabList = document.querySelector('[role="tablist"]');
+
+    function activateTab(btn) {
+      if (!btn) return;
+      const tab = btn.getAttribute('data-tab-button');
+      tabButtons.forEach(b => {
+        const selected = b === btn;
+        b.setAttribute('aria-selected', selected ? 'true' : 'false');
+        b.classList.toggle('bg-white', selected);
+        b.classList.toggle('border-primary', selected);
+        b.classList.toggle('shadow-sm', selected);
+        b.classList.toggle('text-gray-900', selected);
+        b.classList.toggle('border-transparent', !selected);
+        b.classList.toggle('text-gray-600', !selected);
+      });
+      document.querySelectorAll('[data-tab-panel]').forEach(panel => {
+        const show = panel.getAttribute('data-tab-panel') === tab;
+        panel.classList.toggle('hidden', !show);
+        panel.setAttribute('aria-hidden', show ? 'false' : 'true');
+      });
+    }
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => activateTab(btn));
+    });
+
+    tabList?.addEventListener('keydown', (e) => {
+      const ev = /** @type {KeyboardEvent} */ (e);
+      const tabs = Array.from(tabButtons);
+      const currentIndex = tabs.indexOf(document.activeElement);
+      if (currentIndex === -1) return;
+      let nextIndex = currentIndex;
+      if (ev.key === 'ArrowRight' || ev.key === 'ArrowDown') {
+        ev.preventDefault();
+        nextIndex = (currentIndex + 1) % tabs.length;
+      } else if (ev.key === 'ArrowLeft' || ev.key === 'ArrowUp') {
+        ev.preventDefault();
+        nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+      } else if (ev.key === 'Home') {
+        ev.preventDefault();
+        nextIndex = 0;
+      } else if (ev.key === 'End') {
+        ev.preventDefault();
+        nextIndex = tabs.length - 1;
+      }
+      if (nextIndex !== currentIndex) {
+        const next = tabs[nextIndex];
+        if (next) {
+          if (typeof next.focus === 'function') next.focus();
+          activateTab(next);
+        }
+      }
+    });
+  </script>
+
+  <!-- Contact -->
+  <section id="contact" class="py-12 md:py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Let's Work Together</h2>
+      <p class="text-gray-600 mb-8">
+        I'm always interested in new opportunities and collaborations.
+      </p>
+      <a
+        href="mailto:yanlamji@gmail.com"
+        class="inline-flex items-center px-6 py-3 border-2 border-gray-800 text-gray-800 font-medium rounded-lg hover:bg-gray-800 hover:text-white transition-colors"
+      >
+        Get in touch
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer: social icons + copyright -->
   <footer class="pt-8 pb-10 bg-white border-t border-gray-200">
     <div class="max-w-5xl mx-auto px-4 flex flex-col items-center gap-6">
       <div class="flex items-center justify-center gap-8">
-        <a href="https://www.linkedin.com/in/tina-yan-2a3952170/" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-primary transition-colors" aria-label="LinkedIn">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        <a href="https://www.linkedin.com/in/tina-yan-2a3952170/" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-primary-text transition-colors" aria-label="LinkedIn (opens in new window)">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         </a>
-        <a href="mailto:yanlamji@gmail.com" class="text-gray-700 hover:text-primary transition-colors" aria-label="Email">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        <a href="mailto:yanlamji@gmail.com" class="text-gray-700 hover:text-primary-text transition-colors" aria-label="Email Tina">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
         </a>
       </div>
       <p class="text-gray-500 text-sm">Tina Yan 2026</p>
     </div>
   </footer>
+  </main>
 </Layout>

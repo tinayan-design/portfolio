@@ -11,41 +11,41 @@ const base = import.meta.env.BASE_URL;
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
       <!-- Name (left) -->
-      <a href={base} class="text-xl font-bold text-gray-900 hover:text-primary transition-colors flex items-center">
+      <a href={base} class="text-xl font-bold text-gray-900 hover:text-primary-text transition-colors flex items-center">
         Tina Yan
       </a>
 
       <!-- Navigation (right) - fixed height and structure so position is identical on all pages -->
-      <nav class="hidden md:flex items-center gap-8" id="main-nav">
-        <a href={`${base}about`} data-nav="about" class={`inline-flex items-center h-8 font-medium border-b-2 box-border transition-colors nav-link ${currentPage === 'about' ? 'text-gray-900 border-gray-900 font-bold' : 'text-gray-700 border-transparent hover:text-primary'}`}>
+      <nav class="hidden md:flex items-center gap-8" id="main-nav" aria-label="Main navigation">
+        <a href={`${base}about`} data-nav="about" class={`inline-flex items-center h-8 font-medium border-b-2 box-border transition-colors nav-link ${currentPage === 'about' ? 'text-gray-900 border-gray-900 font-bold' : 'text-gray-700 border-transparent hover:text-primary-text'}`}>
           About
         </a>
-        <a href={`${base}#projects`} data-nav="projects" class={`inline-flex items-center h-8 font-medium border-b-2 border-transparent box-border transition-colors nav-link ${currentPage === 'about' ? 'text-gray-700 hover:text-primary' : 'text-gray-700 hover:text-primary'}`}>
+        <a href={`${base}#projects`} data-nav="projects" class={`inline-flex items-center h-8 font-medium border-b-2 border-transparent box-border transition-colors nav-link ${currentPage === 'about' ? 'text-gray-700 hover:text-primary-text' : 'text-gray-700 hover:text-primary-text'}`}>
           Projects
         </a>
-        <a href={`${base}#contact`} data-nav="contact" class={`inline-flex items-center h-8 font-medium border-b-2 border-transparent box-border transition-colors nav-link ${currentPage === 'about' ? 'text-gray-700 hover:text-primary' : 'text-gray-700 hover:text-primary'}`}>
+        <a href={currentPage === 'about' ? `${base}about#contact` : `${base}#contact`} data-nav="contact" class={`inline-flex items-center h-8 font-medium border-b-2 border-transparent box-border transition-colors nav-link ${currentPage === 'about' ? 'text-gray-700 hover:text-primary-text' : 'text-gray-700 hover:text-primary-text'}`}>
           Contacts
         </a>
       </nav>
 
       <!-- Mobile menu button -->
-      <button class="md:hidden p-2 rounded-md text-gray-700 hover:text-primary hover:bg-gray-100 transition-colors" id="mobile-menu-button">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <button type="button" class="md:hidden p-2 rounded-md text-gray-700 hover:text-primary-text hover:bg-gray-100 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-text focus-visible:ring-offset-2" id="mobile-menu-button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
     </div>
     
     <!-- Mobile menu -->
-    <div class="md:hidden hidden" id="mobile-menu">
+    <div class="md:hidden hidden" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
       <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
-        <a href={`${base}about`} class={`block px-3 py-2 font-medium transition-colors ${currentPage === 'about' ? 'text-gray-900' : 'text-gray-700 hover:text-primary'}`}>
+        <a href={`${base}about`} class={`block px-3 py-2 font-medium transition-colors ${currentPage === 'about' ? 'text-gray-900' : 'text-gray-700 hover:text-primary-text'}`}>
           About
         </a>
-        <a href={`${base}#projects`} class="block px-3 py-2 text-gray-700 hover:text-primary transition-colors font-medium">
+        <a href={`${base}#projects`} class="block px-3 py-2 text-gray-700 hover:text-primary-text transition-colors font-medium">
           Projects
         </a>
-        <a href={`${base}#contact`} class="block px-3 py-2 text-gray-700 hover:text-primary transition-colors font-medium">
+        <a href={currentPage === 'about' ? `${base}about#contact` : `${base}#contact`} class="block px-3 py-2 text-gray-700 hover:text-primary-text transition-colors font-medium">
           Contacts
         </a>
       </div>
@@ -58,14 +58,33 @@ const base = import.meta.env.BASE_URL;
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
   
+  function openMenu() {
+    mobileMenu?.classList.remove('hidden');
+    mobileMenuButton?.setAttribute('aria-expanded', 'true');
+    mobileMenuButton?.setAttribute('aria-label', 'Close menu');
+  }
+  function closeMenu() {
+    mobileMenu?.classList.add('hidden');
+    mobileMenuButton?.setAttribute('aria-expanded', 'false');
+    mobileMenuButton?.setAttribute('aria-label', 'Open menu');
+  }
+  
   mobileMenuButton?.addEventListener('click', () => {
-    mobileMenu?.classList.toggle('hidden');
+    const isExpanded = mobileMenuButton?.getAttribute('aria-expanded') === 'true';
+    if (isExpanded) closeMenu();
+    else openMenu();
+  });
+  
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenu && !mobileMenu.classList.contains('hidden')) {
+      closeMenu();
+    }
   });
   
   const mobileLinks = mobileMenu?.querySelectorAll('a');
   mobileLinks?.forEach(link => {
     link.addEventListener('click', () => {
-      mobileMenu?.classList.add('hidden');
+      closeMenu();
     });
   });
 

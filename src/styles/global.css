@@ -1,5 +1,29 @@
 @import "tailwindcss";
 
 @theme {
+  /* Primary: used for backgrounds, decorative borders (white text on primary meets contrast) */
   --color-primary: #6BA6C6;
+  /* Primary text: WCAG AA 4.5:1 on white – use for text and links on light backgrounds */
+  --color-primary-text: #2C6B8A;
+}
+
+/* WCAG 2.4.7 Focus Visible: visible focus for keyboard users */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* WCAG 2.3.3 Animation from Interactions: respect reduced motion */
+@media (prefer-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
 }

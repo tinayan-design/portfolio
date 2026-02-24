@@ -16,27 +16,28 @@ const sortedProjects = projects.sort((a, b) => {
 <Layout title="Tina Yan - UI/UX Designer" description="UI/UX Designer creating innovative digital experiences. View my portfolio of mobile apps, websites, and design systems.">
   <Header />
 
-  <!-- Hero: two-column, text left / image + wavy shape right (Figma template style) -->
-  <section class="min-h-[90vh] flex items-center bg-[#f5f5f5] px-4 sm:px-6 lg:px-8 pt-24 pb-16">
-    <div class="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-      <!-- Left: text -->
-      <div>
-        <p class="text-sm font-semibold uppercase tracking-widest text-primary mb-4">UI/UX Designer</p>
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">
-          Hello, my name is <span class="text-primary whitespace-nowrap">Tina Yan</span>
+  <main id="main-content">
+  <!-- Hero: full-width blurred background (hero-bg.png), centered text block with overlay -->
+  <section class="relative min-h-[90vh] flex items-center overflow-hidden px-4 sm:px-6 lg:px-8 pt-24 pb-16">
+    <!-- Background image: soft blur + reduced brightness -->
+    <div class="absolute inset-0 z-0" aria-hidden="true">
+      <img
+        src={`${import.meta.env.BASE_URL}images/hero-bg.png`}
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover object-center blur-md brightness-95"
+      />
+    </div>
+    <!-- Hero text: centered, aligned with project cards (max-w-5xl), 80% overlay for visibility -->
+    <div class="relative z-10 max-w-5xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto bg-[#f5f5f5]/90 backdrop-blur-sm rounded-2xl p-8 md:p-10 text-center">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary-text mb-4">UI/UX Designer</p>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          Hi, I'm <span class="text-primary-text whitespace-nowrap">Tina Yan</span>
         </h1>
-        <div class="max-w-lg space-y-6 mb-10">
-          <p class="text-gray-900 text-xl font-medium leading-relaxed">
-            I'm a passionate UI/UX designer creating user-centered digital experiences.
-          </p>
-          <p class="text-gray-600 text-lg leading-relaxed">
-            My process begins with empathy—understanding the people behind the pixels. I believe great design should be both beautiful and functional.
-          </p>
-          <p class="text-gray-600 text-base leading-relaxed">
-            Learn more about my work below.
-          </p>
-        </div>
-        <div class="flex flex-wrap gap-4">
+        <p class="max-w-lg mx-auto text-gray-900 text-xl font-medium leading-relaxed mb-10">
+          I design user-centered digital experiences—clear, useful, and thoughtful.
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
           <a
             href="#projects"
             class="inline-flex items-center justify-center px-6 py-3 bg-primary hover:bg-primary/90 text-white font-medium rounded-lg transition-colors"
@@ -48,19 +49,10 @@ const sortedProjects = projects.sort((a, b) => {
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center justify-center px-6 py-3 bg-white border-2 border-gray-800 text-gray-800 font-medium rounded-lg hover:bg-gray-800 hover:text-white transition-colors"
+            aria-label="LinkedIn (opens in new window)"
           >
             LinkedIn
           </a>
-        </div>
-      </div>
-      <!-- Right: hero image in rectangular card (aligns with project cards style) -->
-      <div class="relative flex justify-center md:justify-end items-center">
-        <div class="w-full max-w-sm aspect-[4/5] rounded-2xl overflow-hidden bg-gray-200 shadow-[0_2px_12px_rgba(0,0,0,0.06)]">
-          <img
-            src={`${import.meta.env.BASE_URL}images/hero.png`}
-            alt="Tina Yan"
-            class="w-full h-full object-cover"
-          />
         </div>
       </div>
     </div>
@@ -109,14 +101,15 @@ const sortedProjects = projects.sort((a, b) => {
   <footer class="pt-8 pb-10 bg-white border-t border-gray-200">
     <div class="max-w-5xl mx-auto px-4 flex flex-col items-center gap-6">
       <div class="flex items-center justify-center gap-8">
-        <a href="https://www.linkedin.com/in/tina-yan-2a3952170/" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-primary transition-colors" aria-label="LinkedIn">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        <a href="https://www.linkedin.com/in/tina-yan-2a3952170/" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-primary-text transition-colors" aria-label="LinkedIn (opens in new window)">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         </a>
-        <a href="mailto:yanlamji@gmail.com" class="text-gray-700 hover:text-primary transition-colors" aria-label="Email">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        <a href="mailto:yanlamji@gmail.com" class="text-gray-700 hover:text-primary-text transition-colors" aria-label="Email Tina">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
         </a>
       </div>
       <p class="text-gray-500 text-sm">Tina Yan 2026</p>
     </div>
   </footer>
+  </main>
 </Layout>
