@@ -2,16 +2,27 @@
 export interface Props {
   /** Current page for active nav styling: 'home' | 'about' */
   currentPage?: string;
+  /** Visual theme: editorial uses cream glass on home, about, and project pages */
+  theme?: 'default' | 'editorial';
 }
-const { currentPage } = Astro.props;
+const { currentPage, theme = 'default' } = Astro.props;
 const base = import.meta.env.BASE_URL;
+const isEditorial = theme === 'editorial';
 ---
 
-<header class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md border-b border-gray-200 z-50">
+<header class:list={[
+  'fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b',
+  isEditorial
+    ? 'bg-[#f6f3ee]/90 border-[#ebe6dc]'
+    : 'bg-white/80 border-gray-200',
+]}>
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
       <!-- Name (left) -->
-      <a href={base} class="text-xl font-bold text-gray-900 hover:text-primary-text transition-colors flex items-center">
+      <a href={base} class:list={[
+        'text-xl font-semibold hover:text-primary-text transition-colors flex items-center',
+        isEditorial ? 'text-[#141820] font-[Archivo,sans-serif]' : 'font-bold text-gray-900',
+      ]}>
         Tina Yan
       </a>
 
@@ -38,7 +49,10 @@ const base = import.meta.env.BASE_URL;
     
     <!-- Mobile menu -->
     <div class="md:hidden hidden" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
-      <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
+      <div class:list={[
+        'px-2 pt-2 pb-3 space-y-1 border-t',
+        isEditorial ? 'bg-[#f6f3ee] border-[#ebe6dc]' : 'bg-white border-gray-200',
+      ]}>
         <a href={`${base}about`} class={`block px-3 py-2 font-medium transition-colors ${currentPage === 'about' ? 'text-gray-900' : 'text-gray-700 hover:text-primary-text'}`}>
           About
         </a>

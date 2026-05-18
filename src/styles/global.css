@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./editorial.css";
 
 @theme {
   /* Primary: used for backgrounds, decorative borders (white text on primary meets contrast) */

@@ -11,105 +11,452 @@ const sortedProjects = projects.sort((a, b) => {
   }
   return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
 });
+
+const base = import.meta.env.BASE_URL;
+const projectCount = sortedProjects.length;
 ---
 
 <Layout title="Tina Yan - UI/UX Designer" description="UI/UX Designer creating innovative digital experiences. View my portfolio of mobile apps, websites, and design systems.">
-  <Header />
+  <Header theme="editorial" />
 
-  <main id="main-content">
-  <!-- Hero: full-width blurred background (hero-bg.png), centered text block with overlay -->
-  <section class="relative min-h-[90vh] flex items-center overflow-hidden px-4 sm:px-6 lg:px-8 pt-24 pb-16">
-    <!-- Background image: soft blur + reduced brightness -->
-    <div class="absolute inset-0 z-0" aria-hidden="true">
-      <img
-        src={`${import.meta.env.BASE_URL}images/hero-bg.png`}
-        alt=""
-        class="absolute inset-0 w-full h-full object-cover object-center blur-md brightness-95"
-      />
-    </div>
-    <!-- Hero text: centered, aligned with project cards (max-w-5xl), 80% overlay for visibility -->
-    <div class="relative z-10 max-w-5xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-      <div class="max-w-2xl mx-auto bg-[#f5f5f5]/90 backdrop-blur-sm rounded-2xl p-8 md:p-10 text-center">
-        <p class="text-sm font-semibold uppercase tracking-widest text-primary-text mb-4">UI/UX Designer</p>
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-          Hi, I'm <span class="text-primary-text whitespace-nowrap">Tina Yan</span>
-        </h1>
-        <p class="max-w-lg mx-auto text-gray-900 text-xl font-medium leading-relaxed mb-10">
-          I design user-centered digital experiences—clear, useful, and thoughtful.
+  <main id="main-content" class="editorial home">
+    <!-- Hero: editorial asymmetric layout, atmospheric background -->
+    <section class="hero relative min-h-[100svh] flex items-end lg:items-center overflow-hidden">
+      <div class="hero-bg" aria-hidden="true">
+        <img
+          src={`${base}images/hero-bg.png`}
+          alt=""
+          class="hero-bg__img"
+        />
+        <div class="hero-bg__wash"></div>
+        <div class="hero-bg__grain"></div>
+      </div>
+
+      <div class="hero-inner relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 lg:pt-32 lg:pb-24">
+        <div class="hero-grid lg:grid lg:grid-cols-12 lg:gap-x-10 lg:items-end">
+          <div class="lg:col-span-7 xl:col-span-8 hero-copy">
+            <p class="hero-eyebrow reveal" style="--i: 0">
+              <span class="hero-eyebrow__line" aria-hidden="true"></span>
+              UI/UX Designer · Toronto
+            </p>
+            <h1 class="hero-title reveal" style="--i: 1">
+              Hi, I'm <em class="hero-title__name">Tina Yan</em>
+            </h1>
+            <p class="hero-lead reveal" style="--i: 2">
+              I design user-centered digital experiences—clear, useful, and thoughtful.
+            </p>
+            <div class="hero-actions reveal" style="--i: 3">
+              <a href="#projects" class="btn btn--primary">
+                View projects
+                <span class="btn__arrow" aria-hidden="true">→</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/tina-yan-2a3952170/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--ghost"
+                aria-label="LinkedIn (opens in new window)"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <aside class="lg:col-span-5 xl:col-span-4 hero-aside reveal" style="--i: 4" aria-label="Portfolio highlights">
+            <ul class="hero-stats">
+              <li>
+                <span class="hero-stats__value">{projectCount}</span>
+                <span class="hero-stats__label">Case studies</span>
+              </li>
+              <li>
+                <span class="hero-stats__value">UX</span>
+                <span class="hero-stats__label">Research · UI · Prototyping</span>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+
+      <a href="#projects" class="hero-scroll reveal" style="--i: 5" aria-label="Scroll to projects">
+        <span class="hero-scroll__text">Scroll</span>
+        <span class="hero-scroll__line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="work-section">
+      <div class="work-section__inner max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="work-header reveal" style="--i: 0">
+          <p class="work-header__eyebrow">Selected work</p>
+          <div class="work-header__row">
+            <h2 class="work-header__title">Projects</h2>
+            <span class="work-header__count" aria-hidden="true">{String(projectCount).padStart(2, '0')}</span>
+          </div>
+          <p class="work-header__desc">
+            Mobile apps, marketing sites, and design systems—each shaped around real users and business goals.
+          </p>
+        </header>
+
+        <div class="work-list">
+          {sortedProjects.map((project, i) => (
+            <div class="work-item reveal" style={`--i: ${Math.min(i + 1, 6)}`}>
+              <span class="work-item__index" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+              <ProjectCard
+                title={project.data.title}
+                description={project.data.description}
+                image={project.data.image}
+                tags={project.data.tags}
+                projectUrl={project.data.projectUrl}
+                slug={project.slug}
+                templateStyle={true}
+                imageOnLeft={i % 2 === 1}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+      <div class="contact-section__inner max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 reveal" style="--i: 0">
+        <p class="contact-section__eyebrow">Collaborate</p>
+        <h2 class="contact-section__title">Let's work together</h2>
+        <p class="contact-section__desc">
+          I'm always interested in new opportunities, freelance projects, and design collaborations.
         </p>
-        <div class="flex flex-wrap gap-4 justify-center">
-          <a
-            href="#projects"
-            class="inline-flex items-center justify-center px-6 py-3 bg-primary hover:bg-primary/90 text-white font-medium rounded-lg transition-colors"
-          >
-            Projects
-          </a>
-          <a
-            href="https://www.linkedin.com/in/tina-yan-2a3952170/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center justify-center px-6 py-3 bg-white border-2 border-gray-800 text-gray-800 font-medium rounded-lg hover:bg-gray-800 hover:text-white transition-colors"
-            aria-label="LinkedIn (opens in new window)"
-          >
+        <a href="mailto:yanlamji@gmail.com" class="btn btn--dark">
+          yanlamji@gmail.com
+          <span class="btn__arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="site-footer__inner max-w-5xl mx-auto px-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+        <p class="site-footer__copy">© Tina Yan 2026</p>
+        <div class="site-footer__links">
+          <a href="https://www.linkedin.com/in/tina-yan-2a3952170/" target="_blank" rel="noopener noreferrer" class="site-footer__link" aria-label="LinkedIn (opens in new window)">
             LinkedIn
+          </a>
+          <a href="mailto:yanlamji@gmail.com" class="site-footer__link" aria-label="Email Tina">
+            Email
           </a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Projects: centered title with underline, alternating cards -->
-  <section id="projects" class="pt-20 md:pt-24 pb-28 md:pb-36 bg-white px-4 sm:px-6 lg:px-8">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-2">Projects</h2>
-      <div class="w-16 h-1 bg-primary mx-auto mb-14" role="presentation"></div>
-
-      <div class="flex flex-col gap-16 md:gap-20">
-        {sortedProjects.map((project, i) => (
-          <ProjectCard
-            title={project.data.title}
-            description={project.data.description}
-            image={project.data.image}
-            tags={project.data.tags}
-            projectUrl={project.data.projectUrl}
-            slug={project.slug}
-            templateStyle={true}
-            imageOnLeft={i % 2 === 1}
-          />
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-12 md:py-16 bg-white">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Let's Work Together</h2>
-      <p class="text-gray-600 mb-8">
-        I'm always interested in new opportunities and collaborations.
-      </p>
-      <a
-        href="mailto:yanlamji@gmail.com"
-        class="inline-flex items-center px-6 py-3 border-2 border-gray-800 text-gray-800 font-medium rounded-lg hover:bg-gray-800 hover:text-white transition-colors"
-      >
-        Get in touch
-      </a>
-    </div>
-  </section>
-
-  <!-- Footer: social icons + copyright -->
-  <footer class="pt-8 pb-10 bg-white border-t border-gray-200">
-    <div class="max-w-5xl mx-auto px-4 flex flex-col items-center gap-6">
-      <div class="flex items-center justify-center gap-8">
-        <a href="https://www.linkedin.com/in/tina-yan-2a3952170/" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-primary-text transition-colors" aria-label="LinkedIn (opens in new window)">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-        <a href="mailto:yanlamji@gmail.com" class="text-gray-700 hover:text-primary-text transition-colors" aria-label="Email Tina">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-        </a>
-      </div>
-      <p class="text-gray-500 text-sm">Tina Yan 2026</p>
-    </div>
-  </footer>
+    </footer>
   </main>
 </Layout>
+
+<style>
+  /* —— Home hero —— */
+  .hero {
+    background: var(--cream);
+    /* Full viewport width (covers scrollbar-gutter strip on the right) */
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .hero-bg__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: 55% 40%;
+    transform: translate(-50%, -50%) scale(1.06);
+    filter: saturate(0.85) contrast(1.02);
+  }
+
+  .hero-bg__wash {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(165deg, rgba(246, 243, 238, 0.92) 0%, rgba(246, 243, 238, 0.55) 42%, rgba(246, 243, 238, 0.75) 100%),
+      linear-gradient(90deg, rgba(246, 243, 238, 0.94) 0%, rgba(246, 243, 238, 0.55) 48%, rgba(246, 243, 238, 0.28) 78%, rgba(107, 166, 198, 0.15) 100%);
+  }
+
+  .hero-bg__grain {
+    position: absolute;
+    inset: 0;
+    opacity: 0.35;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply;
+  }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-eyebrow__line {
+    display: block;
+    width: 2rem;
+    height: 1px;
+    background: var(--accent-soft);
+  }
+
+  .hero-title {
+    font-size: clamp(2.75rem, 7vw, 4.75rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-title__name {
+    font-style: italic;
+    color: var(--accent);
+    font-weight: 400;
+  }
+
+  .hero-lead {
+    max-width: 28rem;
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    line-height: 1.65;
+    color: var(--ink-muted);
+    margin-bottom: 2rem;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+  }
+
+  .hero-aside {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(20, 24, 32, 0.1);
+  }
+
+  @media (min-width: 1024px) {
+    .hero-aside {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  .hero-stats {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    .hero-stats {
+      align-items: flex-end;
+      text-align: right;
+    }
+  }
+
+  .hero-stats__value {
+    display: block;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.1;
+  }
+
+  .hero-stats__label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--ink-muted);
+    letter-spacing: 0.04em;
+    margin-top: 0.2rem;
+  }
+
+  .hero-scroll {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--ink-muted);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .hero-scroll:hover,
+  .hero-scroll:focus-visible {
+    color: var(--accent);
+  }
+
+  .hero-scroll__line {
+    display: block;
+    width: 1px;
+    height: 2.5rem;
+    background: linear-gradient(to bottom, var(--accent-soft), transparent);
+    animation: scroll-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes scroll-pulse {
+    0%, 100% { opacity: 0.4; transform: scaleY(0.85); }
+    50% { opacity: 1; transform: scaleY(1); }
+  }
+
+  /* —— Projects —— */
+  .work-section {
+    padding: 5rem 0 7rem;
+    background: #fff;
+    position: relative;
+  }
+
+  .work-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--cream-deep), transparent);
+  }
+
+  .work-header {
+    margin-bottom: 3.5rem;
+  }
+
+  .work-header__eyebrow {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+  }
+
+  .work-header__row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .work-header__title {
+    font-size: clamp(2.25rem, 5vw, 3.25rem);
+    line-height: 1.1;
+    color: var(--ink);
+  }
+
+  .work-header__count {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 300;
+    line-height: 1;
+    color: rgba(107, 166, 198, 0.35);
+    user-select: none;
+  }
+
+  .work-header__desc {
+    max-width: 32rem;
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: var(--ink-muted);
+  }
+
+  .work-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  @media (min-width: 768px) {
+    .work-list {
+      gap: 5rem;
+    }
+  }
+
+  .work-item {
+    position: relative;
+  }
+
+  .work-item__index {
+    position: absolute;
+    top: -0.25rem;
+    left: -0.25rem;
+    z-index: 2;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--accent);
+    background: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  @media (min-width: 768px) {
+    .work-item__index {
+      left: -2.5rem;
+      top: 1.5rem;
+      background: transparent;
+      box-shadow: none;
+      font-size: 1rem;
+    }
+  }
+
+  .editorial.home .work-item :global(article) {
+    border-radius: 1rem;
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.8) inset,
+      0 12px 40px rgba(20, 24, 32, 0.08);
+    border: 1px solid rgba(20, 24, 32, 0.06);
+  }
+
+  .editorial.home .work-item :global(article a) {
+    border-radius: 999px;
+    border-color: var(--ink);
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+  }
+
+  .editorial.home .work-item :global(article a:hover),
+  .editorial.home .work-item :global(article a:focus-visible) {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-scroll__line {
+      animation: none;
+    }
+  }
+</style>
