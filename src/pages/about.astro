@@ -13,21 +13,18 @@ const base = import.meta.env.BASE_URL;
     <section class="about-hero">
       <div class="editorial-grain" aria-hidden="true"></div>
       <div class="about-hero__inner max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-28 pb-16 lg:pt-32 lg:pb-20">
-        <div class="about-hero__grid md:grid md:grid-cols-2 md:gap-16 items-center">
+        <div class="about-hero__grid md:grid md:grid-cols-2 md:gap-16 md:items-start items-center">
           <div class="about-hero__copy">
             <p class="editorial-eyebrow reveal" style="--i: 0">
               <span class="editorial-eyebrow__line" aria-hidden="true"></span>
               About · Toronto
             </p>
             <h1 class="about-hero__title reveal" style="--i: 1">
-              About <em class="about-hero__emphasis">me</em>
+              Designer by <em class="about-hero__emphasis">choice</em>. Strategist by <em class="about-hero__emphasis">experience</em>.
             </h1>
             <div class="about-hero__body reveal" style="--i: 2">
               <p class="about-hero__lead">
-                I'm a passionate UI/UX designer transitioning into creating user-centered digital experiences.
-              </p>
-              <p class="about-hero__text">
-                My process begins with empathy—understanding the people behind the pixels before sketching a single wireframe. I believe great design should be both beautiful and functional, solving real problems while delighting users.
+                After years navigating complex stakeholder environments at TD, I made a deliberate move into UX. I design with both lenses: the user's and the business's.
               </p>
             </div>
             <div class="reveal" style="--i: 3">
@@ -61,36 +58,37 @@ const base = import.meta.env.BASE_URL;
 
     <!-- Tabs: My Story / My Craft -->
     <section class="about-content" id="story">
-      <div class="about-content__inner max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="about-content__inner max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8">
         <header class="about-content__header reveal" style="--i: 0">
           <p class="editorial-eyebrow">Background</p>
-          <h2 class="about-content__title">My story & craft</h2>
+          <div class="about-content__title-row">
+            <h2 class="about-content__title">My story & craft</h2>
+            <div class="about-tabs" role="tablist" aria-label="About sections">
+              <button
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="panel-story"
+                id="tab-story"
+                data-tab-button="story"
+                class="about-tab is-active"
+              >
+                My Story
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-craft"
+                id="tab-craft"
+                data-tab-button="craft"
+                class="about-tab"
+              >
+                My Craft
+              </button>
+            </div>
+          </div>
         </header>
-
-        <div class="about-tabs" role="tablist" aria-label="About sections">
-          <button
-            type="button"
-            role="tab"
-            aria-selected="true"
-            aria-controls="panel-story"
-            id="tab-story"
-            data-tab-button="story"
-            class="about-tab is-active"
-          >
-            My Story
-          </button>
-          <button
-            type="button"
-            role="tab"
-            aria-selected="false"
-            aria-controls="panel-craft"
-            id="tab-craft"
-            data-tab-button="craft"
-            class="about-tab"
-          >
-            My Craft
-          </button>
-        </div>
 
         <!-- Panel: My Story -->
         <div id="panel-story" role="tabpanel" aria-labelledby="tab-story" data-tab-panel="story" class="about-panel">
@@ -99,73 +97,65 @@ const base = import.meta.env.BASE_URL;
 
             <div class="timeline-step timeline-step--reverse">
               <span class="timeline-step__num" aria-hidden="true">01</span>
-              <article class="timeline-card timeline-card--quote">
-                <p>"I believe that the best solutions are often the simplest ones."</p>
+              <article class="timeline-card timeline-card--narrative">
+                <h3 class="timeline-card__title">The Pivot</h3>
+                <p>I spent years watching people struggle with things that were built without them in mind. Confusing processes, unclear interfaces, workflows that created more friction. I wasn't a designer but I kept asking the same question: why is this so hard when it doesn't have to be?</p>
+                <p>I wanted to be on the side that fixes it. Pivoting into UX was following a problem I couldn't stop noticing.</p>
               </article>
             </div>
 
             <div class="timeline-step">
               <span class="timeline-step__num" aria-hidden="true">02</span>
-              <article class="timeline-card">
-                <h3 class="timeline-card__title">The pivot</h3>
-                <p>As a <strong>UI/UX Designer</strong> and career switcher, I am driven by a philosophy of <strong>"Simple is Best"</strong> — the art of stripping away complexity to reveal intuitive, inclusive, and visually compelling experiences. After several years in the corporate world, most recently as a <strong>Workplace Ambassador at TD</strong>, I decided to follow my passion for creative problem-solving and pivot into the world of UX Design.</p>
+              <article class="timeline-card timeline-card--narrative">
+                <h3 class="timeline-card__title">Formalising the Craft</h3>
+                <p>I formalised my design thinking through the Google UX Design Professional Certificate, but years at TD had already built the foundation.</p>
               </article>
             </div>
 
             <div class="timeline-step timeline-step--reverse">
               <span class="timeline-step__num" aria-hidden="true">03</span>
-              <article class="timeline-card">
-                <h3 class="timeline-card__title">The journey</h3>
-                <p>My journey began with the <strong>Google UX Design Professional Certificate</strong>, a rigorous program that allowed me to formalize my design thinking. However, my "design eye" was truly sharpened during my time in corporate environments.</p>
-                <p>I spent years managing high-stakes stakeholder needs and navigating complex enterprise workflows. This experience taught me a vital lesson that I carry into every Figma file: <strong>design isn't just about how it looks; it's about how it works for the human on the other side of the screen.</strong></p>
+              <article class="timeline-card timeline-card--narrative">
+                <h3 class="timeline-card__title">Learning in Motion</h3>
+                <p>Transitioning while working full-time wasn't easy, studying courses, building prototypes, shipping designs. Time is running out, everything I have been through taught me how to keep moving without waiting for perfect conditions.</p>
               </article>
             </div>
 
             <div class="timeline-step">
               <span class="timeline-step__num" aria-hidden="true">04</span>
-              <article class="timeline-card">
-                <h3 class="timeline-card__title">What I bring to the table</h3>
-                <ul class="timeline-card__list">
-                  <li><strong>A Human-Centered Approach:</strong> I bridge the gap between business objectives and user empathy.</li>
-                  <li><strong>Visual Clarity:</strong> I specialize in creating clean, modern interfaces that prioritize usability without sacrificing aesthetics.</li>
-                  <li><strong>Enterprise Literacy:</strong> My background at a major financial institution means I am comfortable with complexity, scale, and cross-functional collaboration.</li>
-                  <li><strong>A Growth Mindset:</strong> I am a lifelong learner who embraces the challenge of a new path with curiosity and resilience.</li>
-                </ul>
+              <article class="timeline-card timeline-card--narrative">
+                <h3 class="timeline-card__title">Pushing Further</h3>
+                <p>More recently, I've been pushing my practice further. Building my own portfolio in Cursor, integrating Claude and Figma MCP into my design process, and completing AI Fluency training from Anthropic.</p>
               </article>
             </div>
 
-            <div class="timeline-step timeline-step--reverse">
+            <div class="timeline-step timeline-step--reverse timeline-step--last">
               <span class="timeline-step__num" aria-hidden="true">05</span>
-              <article class="timeline-card">
-                <h3 class="timeline-card__title">What's next</h3>
-                <p>I am currently seeking a <strong>Junior UX Designer</strong> role where I can contribute to meaningful digital solutions and continue to grow alongside a forward-thinking team.</p>
+              <article class="timeline-card timeline-card--narrative">
+                <h3 class="timeline-card__title">How I Design</h3>
+                <p>Research before assumptions. Clarity before polish. Always asking: does this make someone's life easier?</p>
               </article>
             </div>
+          </div>
 
-            <div class="timeline-step">
-              <span class="timeline-step__num" aria-hidden="true">06</span>
-              <article class="timeline-card">
-                <h3 class="timeline-card__title">Key skills</h3>
-                <p class="timeline-card__intro">UX/UI Design, Wireframing, Prototyping, User Research, Figma, Design Systems, and Accessibility (WCAG).</p>
-                <div class="timeline-card__tags">
-                  <span>UX/UI Design</span>
-                  <span>Wireframing</span>
-                  <span>Prototyping</span>
-                  <span>User Research</span>
-                  <span>Figma</span>
-                  <span>Design Systems</span>
-                  <span>Accessibility (WCAG)</span>
-                </div>
-              </article>
-            </div>
+          <div class="story-summary">
+            <article class="timeline-card">
+              <h3 class="timeline-card__title">What I Bring to the Table</h3>
+              <ul class="timeline-card__list">
+                <li><strong>Enterprise Literacy:</strong> Years at TD means I'm fluent in complexity, scale, and cross-functional collaboration. I understand how decisions get made, and I design with that reality in mind.</li>
+                <li><strong>Both Lenses:</strong> I don't just advocate for the user, I understand the business constraints behind every design decision.</li>
+                <li><strong>Clarity as a Craft:</strong> I specialise in stripping interfaces down to what actually matters. Clean, accessible, and purposeful without losing visual quality.</li>
+                <li><strong>Research-First Instinct:</strong> I ask why before I open Figma. Every decision is traceable back to a real user need or business objective.</li>
+              </ul>
+            </article>
 
-            <div class="timeline-step timeline-step--reverse">
-              <span class="timeline-step__num" aria-hidden="true">07</span>
-              <article class="timeline-card">
-                <h3 class="timeline-card__title">Ready for the next chapter</h3>
-                <p>I'm ready to enter the UX design field and open for <strong>full-time working opportunities</strong>. Let's create something meaningful together.</p>
-              </article>
-            </div>
+            <article class="timeline-card">
+              <h3 class="timeline-card__title">Key Skills</h3>
+              <ul class="timeline-card__list">
+                <li><strong>Design & Tools:</strong> Figma, Wireframing, Prototyping, Design Systems, Accessibility (WCAG), Adobe Creative Suite, Miro</li>
+                <li><strong>AI & Workflow:</strong> Claude, Cursor, Figma MCP, Gemini, Maze, Claude 101 & AI Fluency certified (Anthropic)</li>
+                <li><strong>Process & Strategy:</strong> UX Research, Stakeholder Management, Cross-functional Collaboration, Design Thinking</li>
+              </ul>
+            </article>
           </div>
         </div>
 
@@ -174,9 +164,6 @@ const base = import.meta.env.BASE_URL;
           <div class="craft-intro">
             <p class="craft-intro__quote">
               Beyond pixels and prototypes, my design philosophy is rooted in the tactile world.
-            </p>
-            <p class="craft-intro__text">
-              These creative studies explore the core principles—balance, color theory, and visual rhythm. It's where my passion for art meets the precision of user-centered design.
             </p>
           </div>
 
@@ -201,10 +188,7 @@ const base = import.meta.env.BASE_URL;
 
             <figure class="craft-item">
               <img src={`${base}images/craft/color-block-plant.png`} alt="Bold color blocking with minimalist plant illustration in yellow, teal, orange-red and black" width="4032" height="3024" loading="lazy" />
-              <figcaption>
-                <em>Painted from inspiration by another artist; source/author unknown.</em>
-                Bold color blocking meets minimalist illustration. This canvas highlights my focus on composition and spatial relationships, using a vibrant palette to create harmony between disparate shapes—a core principle I bring to every digital interface I design.
-              </figcaption>
+              <figcaption>Bold color blocking meets minimalist illustration. This canvas highlights my focus on composition and spatial relationships, using a vibrant palette to create harmony between disparate shapes.</figcaption>
             </figure>
 
             <figure class="craft-item">
@@ -285,7 +269,7 @@ const base = import.meta.env.BASE_URL;
         <p class="contact-section__eyebrow">Collaborate</p>
         <h2 class="contact-section__title">Let's work together</h2>
         <p class="contact-section__desc">
-          I'm always interested in new opportunities, freelance projects, and design collaborations.
+          I'm open to full-time UX roles and design collaborations in Toronto and beyond. Let's make something worth using.
         </p>
         <a href="mailto:yanlamji@gmail.com" class="btn btn--dark">
           yanlamji@gmail.com
@@ -299,7 +283,7 @@ const base = import.meta.env.BASE_URL;
       <div class="site-footer__inner max-w-5xl mx-auto px-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
         <p class="site-footer__copy">© Tina Yan 2026</p>
         <div class="site-footer__links">
-          <a href="https://www.linkedin.com/in/tina-yan-2a3952170/" target="_blank" rel="noopener noreferrer" class="site-footer__link" aria-label="LinkedIn (opens in new window)">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/tinayan-ysl/" target="_blank" rel="noopener noreferrer" class="site-footer__link" aria-label="LinkedIn (opens in new window)">LinkedIn</a>
           <a href="mailto:yanlamji@gmail.com" class="site-footer__link" aria-label="Email Tina">Email</a>
         </div>
       </div>
@@ -323,7 +307,7 @@ const base = import.meta.env.BASE_URL;
     line-height: 1.08;
     letter-spacing: -0.02em;
     color: var(--ink);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.75rem;
   }
 
   .about-hero__emphasis {
@@ -333,18 +317,12 @@ const base = import.meta.env.BASE_URL;
   }
 
   .about-hero__lead {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: var(--ink);
-    font-weight: 500;
-    margin-bottom: 1rem;
-  }
-
-  .about-hero__text {
-    font-size: 1.05rem;
+    font-size: clamp(0.875rem, 1.25vw, 1rem);
     line-height: 1.65;
     color: var(--ink-muted);
-    margin-bottom: 2rem;
+    font-weight: 400;
+    margin-bottom: 3.5rem;
+    max-width: 32rem;
   }
 
   .about-hero__portrait {
@@ -356,13 +334,13 @@ const base = import.meta.env.BASE_URL;
       margin-top: 0;
       display: flex;
       justify-content: flex-end;
-      align-items: center;
+      align-items: flex-start;
     }
   }
 
   .about-hero__frame {
     width: 100%;
-    max-width: 25rem;
+    max-width: 21rem;
     border-radius: 1rem;
     overflow: hidden;
     border: 1px solid rgba(20, 24, 32, 0.06);
@@ -379,7 +357,7 @@ const base = import.meta.env.BASE_URL;
 
   /* —— Content / tabs —— */
   .about-content {
-    padding: 4rem 0 6rem;
+    padding: 4rem 0 clamp(12rem, 22vw, 18rem);
     background: #fff;
     position: relative;
   }
@@ -395,28 +373,39 @@ const base = import.meta.env.BASE_URL;
   }
 
   .about-content__header {
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
+  }
+
+  .about-content__title-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem 1.5rem;
   }
 
   .about-content__title {
     font-size: clamp(2rem, 5vw, 2.75rem);
     line-height: 1.1;
     color: var(--ink);
+    margin: 0;
   }
 
   .about-tabs {
     display: inline-flex;
-    gap: 0.25rem;
-    padding: 0.35rem;
+    gap: 0.2rem;
+    padding: 0.25rem;
     background: var(--cream);
     border-radius: 999px;
-    margin-bottom: 3rem;
+    margin-left: auto;
+    flex-shrink: 0;
     border: 1px solid var(--cream-deep);
   }
 
   .about-tab {
-    padding: 0.65rem 1.35rem;
-    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    min-height: 2.75rem;
+    font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.02em;
     border: none;
@@ -434,7 +423,7 @@ const base = import.meta.env.BASE_URL;
   .about-tab.is-active {
     background: #fff;
     color: var(--ink);
-    box-shadow: 0 2px 12px rgba(20, 24, 32, 0.08);
+    box-shadow: 0 2px 8px rgba(20, 24, 32, 0.08);
   }
 
   .about-panel.hidden {
@@ -468,7 +457,7 @@ const base = import.meta.env.BASE_URL;
     display: flex;
     gap: 1rem;
     padding-left: 3.25rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 5rem;
   }
 
   @media (min-width: 768px) {
@@ -484,6 +473,28 @@ const base = import.meta.env.BASE_URL;
       padding-right: 0;
       padding-left: 2.5rem;
     }
+  }
+
+  .timeline-step--last {
+    margin-bottom: 0;
+  }
+
+  .story-summary {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: clamp(4rem, 8vw, 6rem);
+  }
+
+  @media (min-width: 768px) {
+    .story-summary {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2.5rem;
+    }
+  }
+
+  .story-summary .timeline-card {
+    height: 100%;
   }
 
   .timeline-step__num {
@@ -523,7 +534,7 @@ const base = import.meta.env.BASE_URL;
     background: #fff;
     border: 1px solid rgba(20, 24, 32, 0.06);
     border-radius: 1rem;
-    padding: 1.5rem 1.75rem;
+    padding: 2.25rem 2.5rem;
     box-shadow: 0 8px 32px rgba(20, 24, 32, 0.06);
     transition: box-shadow 0.25s ease;
   }
@@ -542,12 +553,12 @@ const base = import.meta.env.BASE_URL;
 
   .timeline-card__title {
     font-family: 'Archivo', sans-serif;
-    font-size: 0.7rem;
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
     font-weight: 600;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--accent);
-    margin: 0 0 0.75rem;
+    margin: 0 0 1rem;
   }
 
   .timeline-card p {
@@ -555,6 +566,11 @@ const base = import.meta.env.BASE_URL;
     line-height: 1.65;
     color: var(--ink-muted);
     margin: 0 0 0.75rem;
+  }
+
+  .timeline-card--narrative p {
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
   }
 
   .timeline-card p:last-child {
@@ -567,26 +583,14 @@ const base = import.meta.env.BASE_URL;
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.85rem;
+    gap: 1.5rem;
   }
 
   .timeline-card__list li {
     font-size: 0.95rem;
-    line-height: 1.6;
+    line-height: 1.75;
     color: var(--ink-muted);
-    padding-left: 1rem;
-    position: relative;
-  }
-
-  .timeline-card__list li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0.55em;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: var(--accent-soft);
+    padding-left: 0;
   }
 
   .timeline-card__intro {
@@ -610,20 +614,21 @@ const base = import.meta.env.BASE_URL;
 
   /* —— Craft gallery —— */
   .about-panel--craft {
-    padding-top: 1rem;
+    --craft-gap: clamp(10rem, 20vw, 16rem);
+    padding-top: max(0rem, calc(var(--craft-gap) - 6rem));
   }
 
   .craft-intro {
     text-align: center;
     max-width: 32rem;
-    margin: 0 auto 4rem;
+    margin: 0 auto var(--craft-gap);
   }
 
   .craft-intro__quote {
     font-family: 'Fraunces', Georgia, serif;
-    font-size: clamp(1.25rem, 3vw, 1.6rem);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
     font-style: italic;
-    line-height: 1.5;
+    line-height: 1.45;
     color: var(--ink);
     margin-bottom: 1.25rem;
   }
@@ -637,13 +642,7 @@ const base = import.meta.env.BASE_URL;
   .craft-gallery {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-  }
-
-  @media (min-width: 768px) {
-    .craft-gallery {
-      gap: 5rem;
-    }
+    gap: clamp(10rem, 20vw, 18rem);
   }
 
   .craft-item img {
@@ -654,9 +653,9 @@ const base = import.meta.env.BASE_URL;
   }
 
   .craft-item figcaption {
-    margin-top: 1.25rem;
-    font-size: 0.95rem;
-    line-height: 1.65;
+    margin-top: 1.5rem;
+    font-size: clamp(1.1rem, 1.75vw, 1.25rem);
+    line-height: 1.7;
     color: var(--ink-muted);
     text-align: center;
   }
@@ -669,8 +668,8 @@ const base = import.meta.env.BASE_URL;
 
   .craft-item figcaption em {
     display: block;
-    font-size: 0.85rem;
-    margin-bottom: 0.75rem;
+    font-size: clamp(0.95rem, 1.35vw, 1.05rem);
+    margin-bottom: 0.85rem;
     color: var(--ink-muted);
     opacity: 0.85;
   }
@@ -679,7 +678,7 @@ const base = import.meta.env.BASE_URL;
     font-size: 1.35rem;
     color: var(--ink);
     padding-top: 2rem;
-    margin: 2rem 0 0;
+    margin: 2rem 0 calc(3rem - clamp(10rem, 20vw, 18rem));
     border-top: 1px solid var(--cream-deep);
   }
 </style>
