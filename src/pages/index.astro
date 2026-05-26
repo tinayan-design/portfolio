@@ -43,7 +43,7 @@ const projectCount = sortedProjects.length;
               Designing with <em class="hero-title__name">empathy</em>. Thinking like a <em class="hero-title__name">stakeholder</em>.
             </h1>
             <p class="hero-lead reveal" style="--i: 2">
-              I bring a rare combination to UX — years of enterprise experience at TD, and a deep commitment to human-centered design.
+              I bring a rare combination to UX: years of enterprise experience at TD, and a deep commitment to human-centered design.
             </p>
             <div class="hero-actions reveal" style="--i: 3">
               <a href="#projects" class="btn btn--primary">
@@ -92,9 +92,6 @@ const projectCount = sortedProjects.length;
             <h2 class="work-header__title">Projects</h2>
             <span class="work-header__count" aria-hidden="true">{String(projectCount).padStart(2, '0')}</span>
           </div>
-          <p class="work-header__desc">
-            Mobile apps, marketing sites, and design systems—each shaped around real users and business goals.
-          </p>
         </header>
 
         <div class="work-list">
@@ -153,11 +150,24 @@ const projectCount = sortedProjects.length;
   /* —— Home hero —— */
   .hero {
     background: var(--cream);
+    position: relative;
     /* Full viewport width (covers scrollbar-gutter strip on the right) */
     width: 100vw;
     max-width: 100vw;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: clamp(5rem, 14vw, 10rem);
+    background: linear-gradient(to bottom, transparent, var(--paper-warm, #faf8f5));
+    pointer-events: none;
+    z-index: 2;
   }
 
   .hero-bg {
@@ -334,7 +344,13 @@ const projectCount = sortedProjects.length;
   /* —— Projects —— */
   .work-section {
     padding: 5rem 0 7rem;
-    background: #fff;
+    background: linear-gradient(
+      to bottom,
+      var(--paper-warm, #faf8f5) 0%,
+      var(--paper, #fff) 12%,
+      var(--paper, #fff) 78%,
+      var(--surface-blend, #f3f0ea) 100%
+    );
     position: relative;
   }
 
@@ -344,8 +360,9 @@ const projectCount = sortedProjects.length;
     top: 0;
     left: 0;
     right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--cream-deep), transparent);
+    height: clamp(2.5rem, 6vw, 4rem);
+    background: linear-gradient(to bottom, rgba(246, 243, 238, 0.45), transparent);
+    pointer-events: none;
   }
 
   .work-header {

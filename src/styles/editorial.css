@@ -15,7 +15,22 @@
 }
 
 body:has(.editorial) {
+  --paper: #ffffff;
+  --paper-warm: #faf8f5;
+  --surface-blend: #f3f0ea;
   background: var(--cream, #f6f3ee);
+}
+
+body:has(.editorial) .header--editorial {
+  background: linear-gradient(
+    to bottom,
+    rgba(246, 243, 238, 0.96) 0%,
+    rgba(246, 243, 238, 0.88) 100%
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: none;
+  box-shadow: 0 1px 0 rgba(235, 230, 220, 0.45);
 }
 
 .editorial :where(h1, h2, h3) {
@@ -130,13 +145,22 @@ body:has(.editorial) {
 }
 
 .editorial .contact-section {
-  padding: 5rem 0;
-  background:
-    linear-gradient(135deg, rgba(107, 166, 198, 0.14) 0%, rgba(246, 243, 238, 0.9) 50%, var(--cream) 100%);
-  border-top: 1px solid var(--cream-deep);
+  position: relative;
+  isolation: isolate;
+  padding: clamp(4.5rem, 8vw, 5.5rem) 0 clamp(5.5rem, 10vw, 7.5rem);
+  background: linear-gradient(
+    to bottom,
+    var(--surface-blend, #f3f0ea) 0%,
+    rgba(246, 243, 238, 0.98) 24%,
+    rgba(107, 166, 198, 0.09) 52%,
+    rgba(246, 243, 238, 0.96) 100%
+  );
+  border-top: none;
 }
 
 .editorial .contact-section__inner {
+  position: relative;
+  z-index: 1;
   text-align: center;
 }
 
@@ -165,14 +189,16 @@ body:has(.editorial) {
 }
 
 .editorial .site-footer {
-  padding: 2rem 0 2.5rem;
-  background: var(--ink);
-  color: rgba(255, 255, 255, 0.7);
+  padding: clamp(3rem, 5vw, 4rem) 0 2.5rem;
+  background: rgba(246, 243, 238, 0.96);
+  color: var(--ink-muted);
+  border-top: 1px solid rgba(235, 230, 220, 0.5);
 }
 
 .editorial .site-footer__copy {
   font-size: 0.85rem;
   letter-spacing: 0.02em;
+  color: var(--ink);
 }
 
 .editorial .site-footer__links {
@@ -183,7 +209,7 @@ body:has(.editorial) {
 .editorial .site-footer__link {
   font-size: 0.85rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--ink-muted);
   text-decoration: none;
   letter-spacing: 0.04em;
   transition: color 0.2s ease;
@@ -191,7 +217,7 @@ body:has(.editorial) {
 
 .editorial .site-footer__link:hover,
 .editorial .site-footer__link:focus-visible {
-  color: var(--accent-soft);
+  color: var(--accent);
 }
 
 @media (prefers-reduced-motion: reduce) {

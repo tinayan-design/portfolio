@@ -1,6 +1,7 @@
----
+﻿---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import CertCard from '../components/CertCard.astro';
 
 const base = import.meta.env.BASE_URL;
 ---
@@ -109,6 +110,15 @@ const base = import.meta.env.BASE_URL;
               <article class="timeline-card timeline-card--narrative">
                 <h3 class="timeline-card__title">Formalising the Craft</h3>
                 <p>I formalised my design thinking through the Google UX Design Professional Certificate, but years at TD had already built the foundation.</p>
+                <div class="cert-list">
+                  <CertCard
+                    title="Google UX Design Certificate"
+                    issuer="Coursera"
+                    issued="August 2025"
+                    href="https://www.coursera.org/account/accomplishments/specialization/X70EGDIDYX9F"
+                    iconSrc={`${base}images/certs/500x500_Google.png`}
+                  />
+                </div>
               </article>
             </div>
 
@@ -123,39 +133,65 @@ const base = import.meta.env.BASE_URL;
             <div class="timeline-step">
               <span class="timeline-step__num" aria-hidden="true">04</span>
               <article class="timeline-card timeline-card--narrative">
-                <h3 class="timeline-card__title">Pushing Further</h3>
-                <p>More recently, I've been pushing my practice further. Building my own portfolio in Cursor, integrating Claude and Figma MCP into my design process, and completing AI Fluency training from Anthropic.</p>
+                <h3 class="timeline-card__title">Learning by Building</h3>
+                <p>I learn by making: I try AI tools, build this portfolio in Cursor, use Claude and Figma MCP in my design process, and turn Anthropic's AI Fluency program into everyday practice.</p>
+                <div class="cert-list">
+                  <CertCard
+                    title="AI Fluency: Framework & Foundations"
+                    issuer="Anthropic"
+                    issued="May 2026"
+                    href="https://verify.skilljar.com/c/fbc3igddzgng"
+                  />
+                  <CertCard
+                    title="Claude 101"
+                    issuer="Anthropic"
+                    issued="April 2026"
+                    href="https://verify.skilljar.com/c/fcutpd2mg9a2"
+                  />
+                </div>
               </article>
             </div>
 
-            <div class="timeline-step timeline-step--reverse timeline-step--last">
+            <div class="timeline-step timeline-step--reverse">
               <span class="timeline-step__num" aria-hidden="true">05</span>
               <article class="timeline-card timeline-card--narrative">
                 <h3 class="timeline-card__title">How I Design</h3>
                 <p>Research before assumptions. Clarity before polish. Always asking: does this make someone's life easier?</p>
               </article>
             </div>
-          </div>
 
-          <div class="story-summary">
-            <article class="timeline-card">
-              <h3 class="timeline-card__title">What I Bring to the Table</h3>
-              <ul class="timeline-card__list">
-                <li><strong>Enterprise Literacy:</strong> Years at TD means I'm fluent in complexity, scale, and cross-functional collaboration. I understand how decisions get made, and I design with that reality in mind.</li>
-                <li><strong>Both Lenses:</strong> I don't just advocate for the user, I understand the business constraints behind every design decision.</li>
-                <li><strong>Clarity as a Craft:</strong> I specialise in stripping interfaces down to what actually matters. Clean, accessible, and purposeful without losing visual quality.</li>
-                <li><strong>Research-First Instinct:</strong> I ask why before I open Figma. Every decision is traceable back to a real user need or business objective.</li>
-              </ul>
-            </article>
+            <div class="timeline-step">
+              <span class="timeline-step__num" aria-hidden="true">06</span>
+              <article class="timeline-card">
+                <h3 class="timeline-card__title">What I Bring to the Table</h3>
+                <ul class="timeline-card__list">
+                  <li><strong>Enterprise Literacy:</strong> Years at TD means I'm fluent in complexity, scale, and cross-functional collaboration. I understand how decisions get made, and I design with that reality in mind.</li>
+                  <li><strong>Both Lenses:</strong> I don't just advocate for the user, I understand the business constraints behind every design decision.</li>
+                  <li><strong>Clarity as a Craft:</strong> I specialise in stripping interfaces down to what actually matters. Clean, accessible, and purposeful without losing visual quality.</li>
+                  <li><strong>Research-First Instinct:</strong> I ask why before I open Figma. Every decision is traceable back to a real user need or business objective.</li>
+                </ul>
+              </article>
+            </div>
 
-            <article class="timeline-card">
-              <h3 class="timeline-card__title">Key Skills</h3>
-              <ul class="timeline-card__list">
-                <li><strong>Design & Tools:</strong> Figma, Wireframing, Prototyping, Design Systems, Accessibility (WCAG), Adobe Creative Suite, Miro</li>
-                <li><strong>AI & Workflow:</strong> Claude, Cursor, Figma MCP, Gemini, Maze, Claude 101 & AI Fluency certified (Anthropic)</li>
-                <li><strong>Process & Strategy:</strong> UX Research, Stakeholder Management, Cross-functional Collaboration, Design Thinking</li>
-              </ul>
-            </article>
+            <div class="timeline-step timeline-step--reverse">
+              <span class="timeline-step__num" aria-hidden="true">07</span>
+              <article class="timeline-card">
+                <h3 class="timeline-card__title">Key Skills</h3>
+                <ul class="timeline-card__list">
+                  <li><strong>Design & Tools:</strong> Figma, Wireframing, Prototyping, Design Systems, Accessibility (WCAG), Adobe Creative Suite, Miro</li>
+                  <li><strong>AI & Workflow:</strong> Claude, Cursor, Figma MCP, Gemini, Maze, Claude 101 & AI Fluency certified (Anthropic)</li>
+                  <li><strong>Process & Strategy:</strong> UX Research, Stakeholder Management, Cross-functional Collaboration, Design Thinking</li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="timeline-step">
+              <span class="timeline-step__num" aria-hidden="true">08</span>
+              <article class="timeline-card timeline-card--narrative">
+                <h3 class="timeline-card__title">Always Iterating</h3>
+                <p>I'm building toward a version of myself that designs with more confidence, more craft, and more impact. I want to make things that genuinely change how someone's day feels. I'm curious, and I'm just getting started.</p>
+              </article>
+            </div>
           </div>
         </div>
 
@@ -281,7 +317,7 @@ const base = import.meta.env.BASE_URL;
     <!-- Footer -->
     <footer class="site-footer">
       <div class="site-footer__inner max-w-5xl mx-auto px-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
-        <p class="site-footer__copy">© Tina Yan 2026</p>
+        <p class="site-footer__copy">@ Tina Yan 2026</p>
         <div class="site-footer__links">
           <a href="https://www.linkedin.com/in/tinayan-ysl/" target="_blank" rel="noopener noreferrer" class="site-footer__link" aria-label="LinkedIn (opens in new window)">LinkedIn</a>
           <a href="mailto:yanlamji@gmail.com" class="site-footer__link" aria-label="Email Tina">Email</a>
@@ -292,7 +328,7 @@ const base = import.meta.env.BASE_URL;
 </Layout>
 
 <style>
-  /* —— About hero —— */
+  /* ??About hero ??*/
   .about-hero {
     position: relative;
     min-height: min(90svh, 900px);
@@ -300,6 +336,18 @@ const base = import.meta.env.BASE_URL;
     align-items: center;
     background: var(--cream);
     overflow: hidden;
+  }
+
+  .about-hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: clamp(5rem, 14vw, 10rem);
+    background: linear-gradient(to bottom, transparent, var(--paper-warm, #faf8f5));
+    pointer-events: none;
+    z-index: 1;
   }
 
   .about-hero__title {
@@ -355,10 +403,17 @@ const base = import.meta.env.BASE_URL;
     height: auto;
   }
 
-  /* —— Content / tabs —— */
+  /* ??Content / tabs ??*/
   .about-content {
-    padding: 4rem 0 clamp(12rem, 22vw, 18rem);
-    background: #fff;
+    --timeline-tail: clamp(4rem, 7vw, 6rem);
+    padding: 4rem 0 0;
+    background: linear-gradient(
+      to bottom,
+      var(--paper-warm, #faf8f5) 0%,
+      var(--paper, #fff) 14%,
+      var(--paper, #fff) 70%,
+      var(--surface-blend, #f3f0ea) 100%
+    );
     position: relative;
   }
 
@@ -368,8 +423,9 @@ const base = import.meta.env.BASE_URL;
     top: 0;
     left: 0;
     right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--cream-deep), transparent);
+    height: clamp(2.5rem, 6vw, 4rem);
+    background: linear-gradient(to bottom, rgba(246, 243, 238, 0.5), transparent);
+    pointer-events: none;
   }
 
   .about-content__header {
@@ -430,10 +486,10 @@ const base = import.meta.env.BASE_URL;
     display: none;
   }
 
-  /* —— Timeline —— */
+  /* ??Timeline ??*/
   .timeline {
     position: relative;
-    padding-bottom: 1rem;
+    padding-bottom: var(--timeline-tail);
   }
 
   .timeline__line {
@@ -442,7 +498,12 @@ const base = import.meta.env.BASE_URL;
     top: 0;
     bottom: 0;
     width: 1px;
-    background: linear-gradient(to bottom, var(--accent-soft), var(--cream-deep));
+    background: linear-gradient(
+      to bottom,
+      var(--accent-soft),
+      rgba(107, 166, 198, 0.35) 70%,
+      rgba(235, 230, 220, 0.85) 100%
+    );
   }
 
   @media (min-width: 768px) {
@@ -460,6 +521,10 @@ const base = import.meta.env.BASE_URL;
     margin-bottom: 5rem;
   }
 
+  .timeline-step:last-child {
+    margin-bottom: 1.5rem;
+  }
+
   @media (min-width: 768px) {
     .timeline-step {
       padding-left: 0;
@@ -473,28 +538,6 @@ const base = import.meta.env.BASE_URL;
       padding-right: 0;
       padding-left: 2.5rem;
     }
-  }
-
-  .timeline-step--last {
-    margin-bottom: 0;
-  }
-
-  .story-summary {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    margin-top: clamp(4rem, 8vw, 6rem);
-  }
-
-  @media (min-width: 768px) {
-    .story-summary {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 2.5rem;
-    }
-  }
-
-  .story-summary .timeline-card {
-    height: 100%;
   }
 
   .timeline-step__num {
@@ -573,6 +616,15 @@ const base = import.meta.env.BASE_URL;
     margin-bottom: 1.5rem;
   }
 
+  .cert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(20, 24, 32, 0.07);
+  }
+
   .timeline-card p:last-child {
     margin-bottom: 0;
   }
@@ -612,10 +664,11 @@ const base = import.meta.env.BASE_URL;
     color: var(--ink-muted);
   }
 
-  /* —— Craft gallery —— */
+  /* ??Craft gallery ??*/
   .about-panel--craft {
     --craft-gap: clamp(10rem, 20vw, 16rem);
     padding-top: max(0rem, calc(var(--craft-gap) - 6rem));
+    padding-bottom: clamp(8rem, 18vw, 14rem);
   }
 
   .craft-intro {
